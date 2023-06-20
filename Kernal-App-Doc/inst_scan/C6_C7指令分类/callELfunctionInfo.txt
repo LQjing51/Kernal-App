@@ -1,0 +1,160 @@
+887  C6.2.6   ADDG
+ AArch64.AllocationTagAccessIsEnabled(
+ AArch64.AddressWithAllocationTag(
+
+913  C6.2.20   AUTDA, AUTDZA
+ AuthDA(
+ AuthDA(
+
+914  C6.2.21   AUTDB, AUTDZB
+ AuthDB(
+ AuthDB(
+
+915  C6.2.22   AUTIA, AUTIA1716, AUTIASP, AUTIAZ, AUTIZA
+ AuthIA(
+ AuthIA(
+
+917  C6.2.23   AUTIB, AUTIB1716, AUTIBSP, AUTIBZ, AUTIZB
+ AuthIB(
+ AuthIB(
+
+936  C6.2.35   BLRAA, BLRAAZ, BLRAB, BLRABZ
+ AuthIA(
+ AuthIB(
+
+939  C6.2.37   BRAA, BRAAZ, BRAB, BRABZ
+ AuthIA(
+ AuthIB(
+
+941  C6.2.38   BRK
+ AArch64.SoftwareBreakpoint(
+
+942  C6.2.39   BTI
+ AArch64.ESBOperation(
+ AArch64.vESBOperation(
+ Hint_WFE(
+ Hint_WFI(
+ EL2Enabled(
+
+1009  C6.2.76   DCPS1
+ DCPSInstruction(
+
+1010  C6.2.77   DCPS2
+ DCPSInstruction(
+
+1011  C6.2.78   DCPS3
+ DCPSInstruction(
+
+1015  C6.2.81   DRPS
+ DRPSInstruction(
+
+1026  C6.2.87   ERET
+ AArch64.CheckForERetTrap(
+ ELR[
+ AArch64.ExceptionReturn(
+ SPSR[
+
+1027  C6.2.88   ERETAA, ERETAB
+ AArch64.CheckForERetTrap(
+ AuthIA(
+ AuthIB(
+ AArch64.ExceptionReturn(
+ SPSR[
+
+1028  C6.2.89   ESB
+ AArch64.ESBOperation(
+ AArch64.vESBOperation(
+ EL2Enabled(
+
+1032  C6.2.92   HINT
+ AArch64.ESBOperation(
+ AArch64.vESBOperation(
+ Hint_WFE(
+ Hint_WFI(
+ EL2Enabled(
+
+1034  C6.2.93   HLT
+ Halt(
+
+1035  C6.2.94   HVC
+ AArch64.CallHypervisor(
+ IsSecure(
+
+1037  C6.2.96   IRG
+ AArch64.AllocationTagAccessIsEnabled(
+ AArch64.AddressWithAllocationTag(
+
+1040  C6.2.98   LD64B
+ CheckLDST64BEnabled(
+ MemLoad64B(
+
+1090  C6.2.124   LDG
+ AArch64.AddressWithAllocationTag(
+
+1113  C6.2.135   LDRAA, LDRAB
+ AuthDA(
+ AuthDB(
+
+1261  C6.2.208   PACDA, PACDZA
+ AddPACDA(
+ AddPACDA(
+
+1262  C6.2.209   PACDB, PACDZB
+ AddPACDB(
+ AddPACDB(
+
+1263  C6.2.210   PACGA
+ AddPACGA(
+ AddPACGA(
+
+1264  C6.2.211   PACIA, PACIA1716, PACIASP, PACIAZ, PACIZA
+ AddPACIA(
+ AddPACIA(
+
+1267  C6.2.212   PACIB, PACIB1716, PACIBSP, PACIBZ, PACIZB
+ AddPACIB(
+ AddPACIB(
+
+1283  C6.2.221   RETAA, RETAB
+ AuthIA(
+ AuthIB(
+
+1316  C6.2.241   SMC
+ AArch64.CheckForSMCUndefOrTrap(
+ AArch64.CallSecureMonitor(
+
+1325  C6.2.248   ST64B
+ CheckLDST64BEnabled(
+ MemStore64B(
+
+1326  C6.2.249   ST64BV
+ CheckST64BVEnabled(
+ MemStore64BWithRet(
+
+1328  C6.2.250   ST64BV0
+ CheckST64BV0Enabled(
+ MemStore64BWithRet(
+
+1459  C6.2.315   SUBG
+ AArch64.AllocationTagAccessIsEnabled(
+ AArch64.AddressWithAllocationTag(
+
+1470  C6.2.321   SVC
+ AArch64.CallSupervisor(
+ AArch64.CheckForSVCTrap(
+
+1512  C6.2.348   WFE
+ Hint_WFE(
+
+1513  C6.2.349   WFET
+ Hint_WFE(
+
+1514  C6.2.350   WFI
+ Hint_WFI(
+
+1515  C6.2.351   WFIT
+ Hint_WFI(
+
+1517  C6.2.353   XPACD, XPACI, XPACLRI
+ Strip(
+

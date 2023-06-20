@@ -1,0 +1,205 @@
+aarch64/debug/pmu/AArch64.CheckForPMUOverflow
+ CTI_SetEventLevel(
+ SetInterruptRequestLevel(
+
+aarch64/debug/takeexceptiondbg/AArch64.TakeExceptionInDebugState
+ EndOfInstruction(
+ SynchronizeErrors(
+
+aarch64/exceptions/async/AArch64.TakePhysicalSErrorException
+ ClearPendingPhysicalSError(
+
+aarch64/exceptions/async/AArch64.TakeVirtualSErrorException
+ ClearPendingVirtualSError(
+
+aarch64/exceptions/debug/AArch64.SoftwareStepException
+ SoftwareStep_DidNotStep(
+ SoftwareStep_SteppedEX(
+
+aarch64/exceptions/exceptions/AArch64.ExceptionClass
+ ThisInstrLength(
+
+aarch64/exceptions/exceptions/AArch64.TakeReset
+ AArch64.ResetControlRegisters(
+ ResetExternalDebugRegisters(
+
+aarch64/exceptions/syscalls/AArch64.CallHypervisor
+ NextInstrAddr(
+
+aarch64/exceptions/syscalls/AArch64.CallSecureMonitor
+ NextInstrAddr(
+
+aarch64/exceptions/syscalls/AArch64.CallSupervisor
+ NextInstrAddr(
+
+aarch64/exceptions/takeexception/AArch64.TakeException
+ EndOfInstruction(
+ SynchronizeErrors(
+ SynchronizeErrors(
+ TakeUnmaskedPhysicalSErrorInterrupts(
+ TakeUnmaskedPhysicalSErrorInterrupts(
+
+aarch64/exceptions/traps/AArch64.SystemAccessTrapSyndrome
+ ThisInstr(
+
+aarch64/exceptions/traps/AArch64.WFxTrap
+ ThisInstr(
+ ThisInstr(
+
+aarch64/functions/aborts/AArch64.FaultSyndrome
+ LS64InstructionSyndrome(
+ LSInstructionSyndrome(
+
+aarch64/functions/exclusive/AArch64.ExclusiveMonitorsPass
+ ClearExclusiveLocal(
+ IsExclusiveGlobal(
+ IsExclusiveLocal(
+ ProcessorID(
+ ProcessorID(
+ ProcessorID(
+
+aarch64/functions/exclusive/AArch64.SetExclusiveMonitors
+ MarkExclusiveGlobal(
+ MarkExclusiveLocal(
+ ProcessorID(
+ ProcessorID(
+ ProcessorID(
+
+aarch64/functions/memory/AArch64.CheckTag
+ PhysMemTagRead(
+
+aarch64/functions/memory/AArch64.MemSingle
+ ClearExclusiveByAddress(
+ ProcessorID(
+
+aarch64/functions/memory/AArch64.MemTag
+ PhysMemTagRead(
+
+aarch64/functions/memory/AArch64.TranslateAddressForAtomicAccess
+ ClearExclusiveByAddress(
+ ProcessorID(
+
+aarch64/functions/memory/MemLoad64B
+ ClearExclusiveByAddress(
+ ProcessorID(
+
+aarch64/functions/memory/MemStore64BWithRet
+ ClearExclusiveByAddress(
+ ProcessorID(
+
+aarch64/functions/ras/AArch64.ESBOperation
+ AArch64.PhysicalSErrorSyndrome(
+ ClearPendingPhysicalSError(
+ IsSynchronizablePhysicalSErrorPending(
+
+aarch64/functions/sve/MemSingleNF
+ IsExternalAbortTakenSynchronously(
+ PendSErrorInterrupt(
+
+aarch64/functions/system/AArch64.ExecutingBROrBLROrRetInstr
+ ThisInstr(
+
+aarch64/functions/system/AArch64.ExecutingBTIInstr
+ ThisInstr(
+
+aarch64/functions/system/AArch64.ExecutingERETInstr
+ ThisInstr(
+
+aarch64/instrs/branch/eret/AArch64.ExceptionReturn
+ ClearExclusiveLocal(
+ SynchronizeErrors(
+ TakeUnmaskedPhysicalSErrorInterrupts(
+
+aarch64/instrs/system/sysops/tlbi/VMID
+ Have16bitVMID(
+
+aarch64/translation/vmsa_walkparams/AArch64.VAMax
+ CTI_SetEventLevel(
+ SetInterruptRequestLevel(
+ LSInstructionSyndrome(
+ ClearExclusiveByAddress(
+ ClearExclusiveLocal(
+ ClearExclusiveLocal(
+ IsExclusiveGlobal(
+ IsExclusiveLocal(
+ MarkExclusiveGlobal(
+ MarkExclusiveLocal(
+ ProcessorID(
+ ProcessorID(
+ ProcessorID(
+ ProcessorID(
+ ProcessorID(
+ ProcessorID(
+ ProcessorID(
+ NextInstrAddr(
+ NextInstrAddr(
+ NextInstrAddr(
+ ResetExternalDebugRegisters(
+ ClearPendingPhysicalSError(
+ ClearPendingPhysicalSError(
+ ClearPendingVirtualSError(
+ EndOfInstruction(
+ EndOfInstruction(
+ EndOfInstruction(
+ EndOfInstruction(
+ EndOfInstruction(
+ EndOfInstruction(
+ EndOfInstruction(
+ IsSynchronizablePhysicalSErrorPending(
+ ThisInstr(
+ ThisInstrLength(
+
+shared/debug/SoftwareLockStatus/SoftwareLockStatus
+ GetAccessComponent(
+
+shared/debug/dccanditr/CheckForDCCInterrupts
+ SetInterruptRequestLevel(
+
+shared/debug/halting/DCPSInstruction
+ SynchronizeErrors(
+
+shared/debug/halting/DRPSInstruction
+ SynchronizeErrors(
+
+shared/debug/halting/Halt
+ CTI_SignalEvent(
+
+shared/debug/haltingevents/CheckHaltingStep
+ HaltingStep_DidNotStep(
+ HaltingStep_SteppedEX(
+
+shared/functions/cache/DecodeSW
+ GetCacheInfo(
+
+shared/functions/exclusive/ClearExclusiveMonitors
+ ClearExclusiveLocal(
+
+shared/functions/externalaborts/HandleExternalAbort
+ PEErrorState(
+ PendSErrorInterrupt(
+
+shared/functions/externalaborts/HandleExternalTTWAbort
+ PEErrorState(
+ PendSErrorInterrupt(
+
+shared/functions/registers/BranchTo
+ Hint_Branch(
+
+shared/functions/registers/BranchToAddr
+ Hint_Branch(
+
+shared/functions/system/InterruptPending
+ FIQPending(
+ IsPhysicalSErrorPending(
+ IsVirtualSErrorPending(
+ VirtualFIQPending(
+ VirtualIRQPending(
+
+shared/functions/system/WaitForEvent
+ EnterLowPowerState(
+ LocalTimeoutEvent(
+
+shared/functions/system/WaitForInterrupt
+ EnterLowPowerState(
+ EnterLowPowerState(
+

@@ -1,0 +1,2225 @@
+913  C6.2.20   AUTDA, AUTDZA
+ AuthDA(
+ AuthDA(
+
+914  C6.2.21   AUTDB, AUTDZB
+ AuthDB(
+ AuthDB(
+
+915  C6.2.22   AUTIA, AUTIA1716, AUTIASP, AUTIAZ, AUTIZA
+ AuthIA(
+ AuthIA(
+
+917  C6.2.23   AUTIB, AUTIB1716, AUTIBSP, AUTIBZ, AUTIZB
+ AuthIB(
+ AuthIB(
+
+920  C6.2.25   B.cond
+ BranchTo(
+
+921  C6.2.26   B
+ BranchTo(
+
+934  C6.2.33   BL
+ BranchTo(
+
+935  C6.2.34   BLR
+ BranchTo(
+
+936  C6.2.35   BLRAA, BLRAAZ, BLRAB, BLRABZ
+ BranchTo(
+ AuthIA(
+ AuthIB(
+
+938  C6.2.36   BR
+ BranchTo(
+
+939  C6.2.37   BRAA, BRAAZ, BRAB, BRABZ
+ BranchTo(
+ AuthIA(
+ AuthIB(
+
+941  C6.2.38   BRK
+ AArch64.SoftwareBreakpoint(
+
+942  C6.2.39   BTI
+ ProfilingSynchronizationBarrier(
+ Hint_DGH(
+ Hint_Yield(
+ SendEvent(
+ SynchronizeErrors(
+ TakeUnmaskedSErrorInterrupts(
+ TraceSynchronizationBarrier(
+ AArch64.ESBOperation(
+ Hint_WFE(
+ Hint_WFI(
+
+944  C6.2.40   CASB, CASAB, CASALB, CASLB
+ SetTagCheckedInstruction(
+ MemAtomicCompareAndSwap(
+ CheckSPAlignment(
+
+946  C6.2.41   CASH, CASAH, CASALH, CASLH
+ SetTagCheckedInstruction(
+ MemAtomicCompareAndSwap(
+ CheckSPAlignment(
+
+948  C6.2.42   CASP, CASPA, CASPAL, CASPL
+ SetTagCheckedInstruction(
+ MemAtomicCompareAndSwap(
+ CheckSPAlignment(
+
+951  C6.2.43   CAS, CASA, CASAL, CASL
+ SetTagCheckedInstruction(
+ MemAtomicCompareAndSwap(
+ CheckSPAlignment(
+
+954  C6.2.44   CBNZ
+ BranchTo(
+
+955  C6.2.45   CBZ
+ BranchTo(
+
+970  C6.2.54   CLREX
+ ClearExclusiveLocal(
+
+1009  C6.2.76   DCPS1
+ DCPSInstruction(
+
+1010  C6.2.77   DCPS2
+ DCPSInstruction(
+
+1011  C6.2.78   DCPS3
+ DCPSInstruction(
+
+1012  C6.2.79   DGH
+ Hint_DGH(
+
+1015  C6.2.81   DRPS
+ DRPSInstruction(
+
+1026  C6.2.87   ERET
+ AArch64.ExceptionReturn(
+ AArch64.CheckForERetTrap(
+
+1027  C6.2.88   ERETAA, ERETAB
+ AArch64.ExceptionReturn(
+ AArch64.CheckForERetTrap(
+ AuthIA(
+ AuthIB(
+
+1028  C6.2.89   ESB
+ SynchronizeErrors(
+ TakeUnmaskedSErrorInterrupts(
+ AArch64.ESBOperation(
+
+1032  C6.2.92   HINT
+ ProfilingSynchronizationBarrier(
+ Hint_DGH(
+ Hint_Yield(
+ SendEvent(
+ SynchronizeErrors(
+ TakeUnmaskedSErrorInterrupts(
+ TraceSynchronizationBarrier(
+ AArch64.ESBOperation(
+ Hint_WFE(
+ Hint_WFI(
+
+1034  C6.2.93   HLT
+ Halt(
+
+1035  C6.2.94   HVC
+ AArch64.CallHypervisor(
+
+1040  C6.2.98   LD64B
+ SetTagCheckedInstruction(
+ MemLoad64B(
+ CheckLDST64BEnabled(
+ CheckSPAlignment(
+
+1041  C6.2.99   LDADDB, LDADDAB, LDADDALB, LDADDLB
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1043  C6.2.100   LDADDH, LDADDAH, LDADDALH, LDADDLH
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1045  C6.2.101   LDADD, LDADDA, LDADDAL, LDADDL
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1048  C6.2.102   LDAPR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1050  C6.2.103   LDAPRB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1052  C6.2.104   LDAPRH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1054  C6.2.105   LDAPUR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1056  C6.2.106   LDAPURB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1058  C6.2.107   LDAPURH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1060  C6.2.108   LDAPURSB
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1062  C6.2.109   LDAPURSH
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1064  C6.2.110   LDAPURSW
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1066  C6.2.111   LDAR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1068  C6.2.112   LDARB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1069  C6.2.113   LDARH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1070  C6.2.114   LDAXP
+ SetTagCheckedInstruction(
+ AArch64.SetExclusiveMonitors(
+ Mem[
+ Mem[
+ Mem[
+ AArch64.Abort(
+ CheckSPAlignment(
+
+1072  C6.2.115   LDAXR
+ SetTagCheckedInstruction(
+ AArch64.SetExclusiveMonitors(
+ Mem[
+ CheckSPAlignment(
+
+1074  C6.2.116   LDAXRB
+ SetTagCheckedInstruction(
+ AArch64.SetExclusiveMonitors(
+ Mem[
+ CheckSPAlignment(
+
+1075  C6.2.117   LDAXRH
+ SetTagCheckedInstruction(
+ AArch64.SetExclusiveMonitors(
+ Mem[
+ CheckSPAlignment(
+
+1076  C6.2.118   LDCLRB, LDCLRAB, LDCLRALB, LDCLRLB
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1078  C6.2.119   LDCLRH, LDCLRAH, LDCLRALH, LDCLRLH
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1080  C6.2.120   LDCLR, LDCLRA, LDCLRAL, LDCLRL
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1083  C6.2.121   LDEORB, LDEORAB, LDEORALB, LDEORLB
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1085  C6.2.122   LDEORH, LDEORAH, LDEORALH, LDEORLH
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1087  C6.2.123   LDEOR, LDEORA, LDEORAL, LDEORL
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1090  C6.2.124   LDG
+ AArch64.MemTag[
+ CheckSPAlignment(
+
+1091  C6.2.125   LDGM
+ AArch64.MemTag[
+ CheckSPAlignment(
+
+1093  C6.2.126   LDLARB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1094  C6.2.127   LDLARH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1095  C6.2.128   LDLAR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1097  C6.2.129   LDNP
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1099  C6.2.130   LDP
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1103  C6.2.131   LDPSW
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1106  C6.2.132   LDR (immediate)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1109  C6.2.133   LDR (literal)
+ SetTagCheckedInstruction(
+ Mem[
+
+1111  C6.2.134   LDR (register)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1113  C6.2.135   LDRAA, LDRAB
+ SetTagCheckedInstruction(
+ EndOfInstruction(
+ Mem[
+ CheckSPAlignment(
+ AuthDA(
+ AuthDB(
+
+1115  C6.2.136   LDRB (immediate)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1118  C6.2.137   LDRB (register)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1120  C6.2.138   LDRH (immediate)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1123  C6.2.139   LDRH (register)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1125  C6.2.140   LDRSB (immediate)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1129  C6.2.141   LDRSB (register)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1131  C6.2.142   LDRSH (immediate)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1135  C6.2.143   LDRSH (register)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1137  C6.2.144   LDRSW (immediate)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1140  C6.2.145   LDRSW (literal)
+ SetTagCheckedInstruction(
+ Mem[
+
+1141  C6.2.146   LDRSW (register)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1143  C6.2.147   LDSETB, LDSETAB, LDSETALB, LDSETLB
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1145  C6.2.148   LDSETH, LDSETAH, LDSETALH, LDSETLH
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1147  C6.2.149   LDSET, LDSETA, LDSETAL, LDSETL
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1150  C6.2.150   LDSMAXB, LDSMAXAB, LDSMAXALB, LDSMAXLB
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1152  C6.2.151   LDSMAXH, LDSMAXAH, LDSMAXALH, LDSMAXLH
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1154  C6.2.152   LDSMAX, LDSMAXA, LDSMAXAL, LDSMAXL
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1157  C6.2.153   LDSMINB, LDSMINAB, LDSMINALB, LDSMINLB
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1159  C6.2.154   LDSMINH, LDSMINAH, LDSMINALH, LDSMINLH
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1161  C6.2.155   LDSMIN, LDSMINA, LDSMINAL, LDSMINL
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1164  C6.2.156   LDTR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1166  C6.2.157   LDTRB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1168  C6.2.158   LDTRH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1170  C6.2.159   LDTRSB
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1172  C6.2.160   LDTRSH
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1174  C6.2.161   LDTRSW
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1176  C6.2.162   LDUMAXB, LDUMAXAB, LDUMAXALB, LDUMAXLB
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1178  C6.2.163   LDUMAXH, LDUMAXAH, LDUMAXALH, LDUMAXLH
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1180  C6.2.164   LDUMAX, LDUMAXA, LDUMAXAL, LDUMAXL
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1183  C6.2.165   LDUMINB, LDUMINAB, LDUMINALB, LDUMINLB
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1185  C6.2.166   LDUMINH, LDUMINAH, LDUMINALH, LDUMINLH
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1187  C6.2.167   LDUMIN, LDUMINA, LDUMINAL, LDUMINL
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1190  C6.2.168   LDUR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1192  C6.2.169   LDURB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1193  C6.2.170   LDURH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1194  C6.2.171   LDURSB
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1196  C6.2.172   LDURSH
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1198  C6.2.173   LDURSW
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1199  C6.2.174   LDXP
+ SetTagCheckedInstruction(
+ AArch64.SetExclusiveMonitors(
+ Mem[
+ Mem[
+ Mem[
+ AArch64.Abort(
+ CheckSPAlignment(
+
+1201  C6.2.175   LDXR
+ SetTagCheckedInstruction(
+ AArch64.SetExclusiveMonitors(
+ Mem[
+ CheckSPAlignment(
+
+1203  C6.2.176   LDXRB
+ SetTagCheckedInstruction(
+ AArch64.SetExclusiveMonitors(
+ Mem[
+ CheckSPAlignment(
+
+1204  C6.2.177   LDXRH
+ SetTagCheckedInstruction(
+ AArch64.SetExclusiveMonitors(
+ Mem[
+ CheckSPAlignment(
+
+1236  C6.2.194   MRS
+ AArch64.SysRegRead(
+
+1261  C6.2.208   PACDA, PACDZA
+ AddPACDA(
+ AddPACDA(
+
+1262  C6.2.209   PACDB, PACDZB
+ AddPACDB(
+ AddPACDB(
+
+1263  C6.2.210   PACGA
+ AddPACGA(
+ AddPACGA(
+
+1264  C6.2.211   PACIA, PACIA1716, PACIASP, PACIAZ, PACIZA
+ AddPACIA(
+ AddPACIA(
+
+1267  C6.2.212   PACIB, PACIB1716, PACIBSP, PACIBZ, PACIZB
+ AddPACIB(
+ AddPACIB(
+
+1270  C6.2.213   PRFM (immediate)
+ SetTagCheckedInstruction(
+
+1272  C6.2.214   PRFM (literal)
+ SetTagCheckedInstruction(
+
+1274  C6.2.215   PRFM (register)
+ SetTagCheckedInstruction(
+
+1276  C6.2.216   PRFUM
+ SetTagCheckedInstruction(
+
+1278  C6.2.217   PSB CSYNC
+ ProfilingSynchronizationBarrier(
+
+1282  C6.2.220   RET
+ BranchTo(
+
+1283  C6.2.221   RETAA, RETAB
+ BranchTo(
+ AuthIA(
+ AuthIB(
+
+1312  C6.2.238   SEV
+ SendEvent(
+
+1316  C6.2.241   SMC
+ AArch64.CallSecureMonitor(
+ AArch64.CheckForSMCUndefOrTrap(
+
+1323  C6.2.247   ST2G
+ SetTagCheckedInstruction(
+ AArch64.MemTag[
+ AArch64.MemTag[
+ CheckSPAlignment(
+
+1325  C6.2.248   ST64B
+ SetTagCheckedInstruction(
+ MemStore64B(
+ CheckLDST64BEnabled(
+ CheckSPAlignment(
+
+1326  C6.2.249   ST64BV
+ SetTagCheckedInstruction(
+ MemStore64BWithRet(
+ CheckST64BVEnabled(
+ CheckSPAlignment(
+
+1328  C6.2.250   ST64BV0
+ SetTagCheckedInstruction(
+ MemStore64BWithRet(
+ CheckST64BV0Enabled(
+ CheckSPAlignment(
+
+1348  C6.2.260   STG
+ SetTagCheckedInstruction(
+ AArch64.MemTag[
+ CheckSPAlignment(
+
+1350  C6.2.261   STGM
+ AArch64.MemTag[
+ CheckSPAlignment(
+
+1351  C6.2.262   STGP
+ SetTagCheckedInstruction(
+ AArch64.MemTag[
+ Mem[
+ Mem[
+ AArch64.Abort(
+ CheckSPAlignment(
+
+1354  C6.2.263   STLLRB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1355  C6.2.264   STLLRH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1356  C6.2.265   STLLR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1358  C6.2.266   STLR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1360  C6.2.267   STLRB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1361  C6.2.268   STLRH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1362  C6.2.269   STLUR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1364  C6.2.270   STLURB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1366  C6.2.271   STLURH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1368  C6.2.272   STLXP
+ SetTagCheckedInstruction(
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ Mem[
+ CheckSPAlignment(
+
+1371  C6.2.273   STLXR
+ SetTagCheckedInstruction(
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ Mem[
+ CheckSPAlignment(
+
+1374  C6.2.274   STLXRB
+ SetTagCheckedInstruction(
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ Mem[
+ CheckSPAlignment(
+
+1376  C6.2.275   STLXRH
+ SetTagCheckedInstruction(
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ Mem[
+ CheckSPAlignment(
+
+1378  C6.2.276   STNP
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1380  C6.2.277   STP
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+
+1383  C6.2.278   STR (immediate)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1386  C6.2.279   STR (register)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1388  C6.2.280   STRB (immediate)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1391  C6.2.281   STRB (register)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1393  C6.2.282   STRH (immediate)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1396  C6.2.283   STRH (register)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1416  C6.2.293   STTR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1418  C6.2.294   STTRB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1420  C6.2.295   STTRH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1434  C6.2.302   STUR
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1436  C6.2.303   STURB
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1437  C6.2.304   STURH
+ SetTagCheckedInstruction(
+ Mem[
+ CheckSPAlignment(
+
+1438  C6.2.305   STXP
+ SetTagCheckedInstruction(
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ Mem[
+ CheckSPAlignment(
+
+1441  C6.2.306   STXR
+ SetTagCheckedInstruction(
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ Mem[
+ CheckSPAlignment(
+
+1443  C6.2.307   STXRB
+ SetTagCheckedInstruction(
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ Mem[
+ CheckSPAlignment(
+
+1445  C6.2.308   STXRH
+ SetTagCheckedInstruction(
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ Mem[
+ CheckSPAlignment(
+
+1447  C6.2.309   STZ2G
+ SetTagCheckedInstruction(
+ AArch64.MemTag[
+ AArch64.MemTag[
+ Mem[
+ Mem[
+ AArch64.Abort(
+ CheckSPAlignment(
+
+1449  C6.2.310   STZG
+ SetTagCheckedInstruction(
+ AArch64.MemTag[
+ Mem[
+ AArch64.Abort(
+ CheckSPAlignment(
+
+1451  C6.2.311   STZGM
+ AArch64.MemTag[
+ Mem[
+ CheckSPAlignment(
+
+1470  C6.2.321   SVC
+ AArch64.CallSupervisor(
+ AArch64.CheckForSVCTrap(
+
+1471  C6.2.322   SWPB, SWPAB, SWPALB, SWPLB
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1473  C6.2.323   SWPH, SWPAH, SWPALH, SWPLH
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1475  C6.2.324   SWP, SWPA, SWPAL, SWPL
+ SetTagCheckedInstruction(
+ MemAtomic(
+ CheckSPAlignment(
+
+1484  C6.2.329   SYSL
+ AArch64.SysInstrWithResult(
+
+1485  C6.2.330   TBNZ
+ BranchTo(
+
+1486  C6.2.331   TBZ
+ BranchTo(
+
+1490  C6.2.333   TSB CSYNC
+ TraceSynchronizationBarrier(
+
+1512  C6.2.348   WFE
+ Hint_WFE(
+
+1513  C6.2.349   WFET
+ EndOfInstruction(
+ Hint_WFE(
+
+1514  C6.2.350   WFI
+ Hint_WFI(
+
+1515  C6.2.351   WFIT
+ EndOfInstruction(
+ Hint_WFI(
+
+1517  C6.2.353   XPACD, XPACI, XPACLRI
+ Strip(
+
+1519  C6.2.354   YIELD
+ Hint_Yield(
+
+1525  C7.2.1   ABS
+ CheckFPAdvSIMDEnabled64(
+
+1527  C7.2.2   ADD (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1529  C7.2.3   ADDHN, ADDHN2
+ CheckFPAdvSIMDEnabled64(
+
+1531  C7.2.4   ADDP (scalar)
+ CheckFPAdvSIMDEnabled64(
+
+1533  C7.2.5   ADDP (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1535  C7.2.6   ADDV
+ CheckFPAdvSIMDEnabled64(
+
+1537  C7.2.7   AESD
+ AArch64.CheckFPAdvSIMDEnabled(
+
+1538  C7.2.8   AESE
+ AArch64.CheckFPAdvSIMDEnabled(
+
+1539  C7.2.9   AESIMC
+ AArch64.CheckFPAdvSIMDEnabled(
+
+1540  C7.2.10   AESMC
+ AArch64.CheckFPAdvSIMDEnabled(
+
+1541  C7.2.11   AND (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1543  C7.2.12   BCAX
+ AArch64.CheckFPAdvSIMDEnabled(
+
+1545  C7.2.13   BFCVT
+ CheckFPAdvSIMDEnabled64(
+
+1546  C7.2.14   BFCVTN, BFCVTN2
+ CheckFPAdvSIMDEnabled64(
+
+1548  C7.2.15   BFDOT (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1550  C7.2.16   BFDOT (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1552  C7.2.17   BFMLALB, BFMLALT (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1554  C7.2.18   BFMLALB, BFMLALT (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1556  C7.2.19   BFMMLA
+ CheckFPAdvSIMDEnabled64(
+
+1557  C7.2.20   BIC (vector, immediate)
+ CheckFPAdvSIMDEnabled64(
+
+1559  C7.2.21   BIC (vector, register)
+ CheckFPAdvSIMDEnabled64(
+
+1561  C7.2.22   BIF
+ CheckFPAdvSIMDEnabled64(
+
+1563  C7.2.23   BIT
+ CheckFPAdvSIMDEnabled64(
+
+1565  C7.2.24   BSL
+ CheckFPAdvSIMDEnabled64(
+
+1567  C7.2.25   CLS (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1569  C7.2.26   CLZ (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1571  C7.2.27   CMEQ (register)
+ CheckFPAdvSIMDEnabled64(
+
+1573  C7.2.28   CMEQ (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1576  C7.2.29   CMGE (register)
+ CheckFPAdvSIMDEnabled64(
+
+1579  C7.2.30   CMGE (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1582  C7.2.31   CMGT (register)
+ CheckFPAdvSIMDEnabled64(
+
+1585  C7.2.32   CMGT (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1588  C7.2.33   CMHI (register)
+ CheckFPAdvSIMDEnabled64(
+
+1591  C7.2.34   CMHS (register)
+ CheckFPAdvSIMDEnabled64(
+
+1594  C7.2.35   CMLE (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1597  C7.2.36   CMLT (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1599  C7.2.37   CMTST
+ CheckFPAdvSIMDEnabled64(
+
+1601  C7.2.38   CNT
+ CheckFPAdvSIMDEnabled64(
+
+1603  C7.2.39   DUP (element)
+ CheckFPAdvSIMDEnabled64(
+
+1606  C7.2.40   DUP (general)
+ CheckFPAdvSIMDEnabled64(
+
+1608  C7.2.41   EOR (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1610  C7.2.42   EOR3
+ AArch64.CheckFPAdvSIMDEnabled(
+
+1611  C7.2.43   EXT
+ CheckFPAdvSIMDEnabled64(
+
+1613  C7.2.44   FABD
+ CheckFPAdvSIMDEnabled64(
+
+1616  C7.2.45   FABS (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1618  C7.2.46   FABS (scalar)
+ CheckFPEnabled64(
+
+1620  C7.2.47   FACGE
+ CheckFPAdvSIMDEnabled64(
+
+1624  C7.2.48   FACGT
+ CheckFPAdvSIMDEnabled64(
+
+1628  C7.2.49   FADD (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1630  C7.2.50   FADD (scalar)
+ CheckFPEnabled64(
+
+1632  C7.2.51   FADDP (scalar)
+ CheckFPAdvSIMDEnabled64(
+
+1634  C7.2.52   FADDP (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1636  C7.2.53   FCADD
+ CheckFPAdvSIMDEnabled64(
+
+1638  C7.2.54   FCCMP
+ CheckFPEnabled64(
+
+1640  C7.2.55   FCCMPE
+ CheckFPEnabled64(
+
+1642  C7.2.56   FCMEQ (register)
+ CheckFPAdvSIMDEnabled64(
+
+1646  C7.2.57   FCMEQ (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1649  C7.2.58   FCMGE (register)
+ CheckFPAdvSIMDEnabled64(
+
+1653  C7.2.59   FCMGE (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1656  C7.2.60   FCMGT (register)
+ CheckFPAdvSIMDEnabled64(
+
+1660  C7.2.61   FCMGT (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1663  C7.2.62   FCMLA (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1666  C7.2.63   FCMLA
+ CheckFPAdvSIMDEnabled64(
+
+1669  C7.2.64   FCMLE (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1672  C7.2.65   FCMLT (zero)
+ CheckFPAdvSIMDEnabled64(
+
+1675  C7.2.66   FCMP
+ CheckFPEnabled64(
+
+1677  C7.2.67   FCMPE
+ CheckFPEnabled64(
+
+1679  C7.2.68   FCSEL
+ CheckFPEnabled64(
+
+1681  C7.2.69   FCVT
+ CheckFPEnabled64(
+
+1683  C7.2.70   FCVTAS (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1686  C7.2.71   FCVTAS (scalar)
+ CheckFPEnabled64(
+
+1688  C7.2.72   FCVTAU (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1691  C7.2.73   FCVTAU (scalar)
+ CheckFPEnabled64(
+
+1693  C7.2.74   FCVTL, FCVTL2
+ CheckFPAdvSIMDEnabled64(
+
+1695  C7.2.75   FCVTMS (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1698  C7.2.76   FCVTMS (scalar)
+ CheckFPEnabled64(
+
+1700  C7.2.77   FCVTMU (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1703  C7.2.78   FCVTMU (scalar)
+ CheckFPEnabled64(
+
+1705  C7.2.79   FCVTN, FCVTN2
+ CheckFPAdvSIMDEnabled64(
+
+1707  C7.2.80   FCVTNS (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1710  C7.2.81   FCVTNS (scalar)
+ CheckFPEnabled64(
+
+1712  C7.2.82   FCVTNU (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1715  C7.2.83   FCVTNU (scalar)
+ CheckFPEnabled64(
+
+1717  C7.2.84   FCVTPS (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1720  C7.2.85   FCVTPS (scalar)
+ CheckFPEnabled64(
+
+1722  C7.2.86   FCVTPU (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1725  C7.2.87   FCVTPU (scalar)
+ CheckFPEnabled64(
+
+1727  C7.2.88   FCVTXN, FCVTXN2
+ CheckFPAdvSIMDEnabled64(
+
+1730  C7.2.89   FCVTZS (vector, fixed-point)
+ CheckFPAdvSIMDEnabled64(
+
+1733  C7.2.90   FCVTZS (vector, integer)
+ CheckFPAdvSIMDEnabled64(
+
+1736  C7.2.91   FCVTZS (scalar, fixed-point)
+ CheckFPEnabled64(
+
+1738  C7.2.92   FCVTZS (scalar, integer)
+ CheckFPEnabled64(
+
+1740  C7.2.93   FCVTZU (vector, fixed-point)
+ CheckFPAdvSIMDEnabled64(
+
+1743  C7.2.94   FCVTZU (vector, integer)
+ CheckFPAdvSIMDEnabled64(
+
+1746  C7.2.95   FCVTZU (scalar, fixed-point)
+ CheckFPEnabled64(
+
+1748  C7.2.96   FCVTZU (scalar, integer)
+ CheckFPEnabled64(
+
+1750  C7.2.97   FDIV (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1752  C7.2.98   FDIV (scalar)
+ CheckFPEnabled64(
+
+1754  C7.2.99   FJCVTZS
+ CheckFPEnabled64(
+
+1755  C7.2.100   FMADD
+ CheckFPEnabled64(
+
+1757  C7.2.101   FMAX (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1759  C7.2.102   FMAX (scalar)
+ CheckFPEnabled64(
+
+1761  C7.2.103   FMAXNM (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1763  C7.2.104   FMAXNM (scalar)
+ CheckFPEnabled64(
+
+1765  C7.2.105   FMAXNMP (scalar)
+ CheckFPAdvSIMDEnabled64(
+
+1767  C7.2.106   FMAXNMP (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1769  C7.2.107   FMAXNMV
+ CheckFPAdvSIMDEnabled64(
+
+1771  C7.2.108   FMAXP (scalar)
+ CheckFPAdvSIMDEnabled64(
+
+1773  C7.2.109   FMAXP (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1775  C7.2.110   FMAXV
+ CheckFPAdvSIMDEnabled64(
+
+1777  C7.2.111   FMIN (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1779  C7.2.112   FMIN (scalar)
+ CheckFPEnabled64(
+
+1781  C7.2.113   FMINNM (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1783  C7.2.114   FMINNM (scalar)
+ CheckFPEnabled64(
+
+1785  C7.2.115   FMINNMP (scalar)
+ CheckFPAdvSIMDEnabled64(
+
+1787  C7.2.116   FMINNMP (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1789  C7.2.117   FMINNMV
+ CheckFPAdvSIMDEnabled64(
+
+1791  C7.2.118   FMINP (scalar)
+ CheckFPAdvSIMDEnabled64(
+
+1793  C7.2.119   FMINP (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1795  C7.2.120   FMINV
+ CheckFPAdvSIMDEnabled64(
+
+1797  C7.2.121   FMLA (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1801  C7.2.122   FMLA (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1803  C7.2.123   FMLAL, FMLAL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1805  C7.2.124   FMLAL, FMLAL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1807  C7.2.125   FMLS (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1811  C7.2.126   FMLS (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1813  C7.2.127   FMLSL, FMLSL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1815  C7.2.128   FMLSL, FMLSL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1817  C7.2.129   FMOV (vector, immediate)
+ CheckFPAdvSIMDEnabled64(
+
+1819  C7.2.130   FMOV (register)
+ CheckFPEnabled64(
+
+1821  C7.2.131   FMOV (general)
+ CheckFPEnabled64(
+
+1824  C7.2.132   FMOV (scalar, immediate)
+ CheckFPEnabled64(
+
+1826  C7.2.133   FMSUB
+ CheckFPEnabled64(
+
+1828  C7.2.134   FMUL (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1832  C7.2.135   FMUL (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1834  C7.2.136   FMUL (scalar)
+ CheckFPEnabled64(
+
+1836  C7.2.137   FMULX (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1840  C7.2.138   FMULX
+ CheckFPAdvSIMDEnabled64(
+
+1843  C7.2.139   FNEG (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1845  C7.2.140   FNEG (scalar)
+ CheckFPEnabled64(
+
+1847  C7.2.141   FNMADD
+ CheckFPEnabled64(
+
+1849  C7.2.142   FNMSUB
+ CheckFPEnabled64(
+
+1851  C7.2.143   FNMUL (scalar)
+ CheckFPEnabled64(
+
+1853  C7.2.144   FRECPE
+ CheckFPAdvSIMDEnabled64(
+
+1856  C7.2.145   FRECPS
+ CheckFPAdvSIMDEnabled64(
+
+1859  C7.2.146   FRECPX
+ CheckFPAdvSIMDEnabled64(
+
+1861  C7.2.147   FRINT32X (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1863  C7.2.148   FRINT32X (scalar)
+ CheckFPEnabled64(
+
+1865  C7.2.149   FRINT32Z (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1867  C7.2.150   FRINT32Z (scalar)
+ CheckFPEnabled64(
+
+1869  C7.2.151   FRINT64X (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1871  C7.2.152   FRINT64X (scalar)
+ CheckFPEnabled64(
+
+1873  C7.2.153   FRINT64Z (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1875  C7.2.154   FRINT64Z (scalar)
+ CheckFPEnabled64(
+
+1877  C7.2.155   FRINTA (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1879  C7.2.156   FRINTA (scalar)
+ CheckFPEnabled64(
+
+1881  C7.2.157   FRINTI (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1883  C7.2.158   FRINTI (scalar)
+ CheckFPEnabled64(
+
+1885  C7.2.159   FRINTM (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1887  C7.2.160   FRINTM (scalar)
+ CheckFPEnabled64(
+
+1889  C7.2.161   FRINTN (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1891  C7.2.162   FRINTN (scalar)
+ CheckFPEnabled64(
+
+1893  C7.2.163   FRINTP (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1895  C7.2.164   FRINTP (scalar)
+ CheckFPEnabled64(
+
+1897  C7.2.165   FRINTX (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1899  C7.2.166   FRINTX (scalar)
+ CheckFPEnabled64(
+
+1901  C7.2.167   FRINTZ (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1903  C7.2.168   FRINTZ (scalar)
+ CheckFPEnabled64(
+
+1905  C7.2.169   FRSQRTE
+ CheckFPAdvSIMDEnabled64(
+
+1908  C7.2.170   FRSQRTS
+ CheckFPAdvSIMDEnabled64(
+
+1911  C7.2.171   FSQRT (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1913  C7.2.172   FSQRT (scalar)
+ CheckFPEnabled64(
+
+1915  C7.2.173   FSUB (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1917  C7.2.174   FSUB (scalar)
+ CheckFPEnabled64(
+
+1919  C7.2.175   INS (element)
+ CheckFPAdvSIMDEnabled64(
+
+1921  C7.2.176   INS (general)
+ CheckFPAdvSIMDEnabled64(
+
+1923  C7.2.177   LD1 (multiple structures)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1927  C7.2.178   LD1 (single structure)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1931  C7.2.179   LD1R
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1934  C7.2.180   LD2 (multiple structures)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1937  C7.2.181   LD2 (single structure)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1941  C7.2.182   LD2R
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1944  C7.2.183   LD3 (multiple structures)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1947  C7.2.184   LD3 (single structure)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1951  C7.2.185   LD3R
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1954  C7.2.186   LD4 (multiple structures)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1957  C7.2.187   LD4 (single structure)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1961  C7.2.188   LD4R
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1964  C7.2.189   LDNP (SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1966  C7.2.190   LDP (SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1970  C7.2.191   LDR (immediate, SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1974  C7.2.192   LDR (literal, SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ CheckFPAdvSIMDEnabled64(
+
+1976  C7.2.193   LDR (register, SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1979  C7.2.194   LDUR (SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+1981  C7.2.195   MLA (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1983  C7.2.196   MLA (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1985  C7.2.197   MLS (by element)
+ CheckFPAdvSIMDEnabled64(
+
+1987  C7.2.198   MLS (vector)
+ CheckFPAdvSIMDEnabled64(
+
+1998  C7.2.204   MOVI
+ CheckFPAdvSIMDEnabled64(
+
+2001  C7.2.205   MUL (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2003  C7.2.206   MUL (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2006  C7.2.208   MVNI
+ CheckFPAdvSIMDEnabled64(
+
+2009  C7.2.209   NEG (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2011  C7.2.210   NOT
+ CheckFPAdvSIMDEnabled64(
+
+2013  C7.2.211   ORN (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2015  C7.2.212   ORR (vector, immediate)
+ CheckFPAdvSIMDEnabled64(
+
+2017  C7.2.213   ORR (vector, register)
+ CheckFPAdvSIMDEnabled64(
+
+2019  C7.2.214   PMUL
+ CheckFPAdvSIMDEnabled64(
+
+2021  C7.2.215   PMULL, PMULL2
+ CheckFPAdvSIMDEnabled64(
+
+2023  C7.2.216   RADDHN, RADDHN2
+ CheckFPAdvSIMDEnabled64(
+
+2025  C7.2.217   RAX1
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2026  C7.2.218   RBIT (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2028  C7.2.219   REV16 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2030  C7.2.220   REV32 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2032  C7.2.221   REV64
+ CheckFPAdvSIMDEnabled64(
+
+2034  C7.2.222   RSHRN, RSHRN2
+ CheckFPAdvSIMDEnabled64(
+
+2036  C7.2.223   RSUBHN, RSUBHN2
+ CheckFPAdvSIMDEnabled64(
+
+2038  C7.2.224   SABA
+ CheckFPAdvSIMDEnabled64(
+
+2040  C7.2.225   SABAL, SABAL2
+ CheckFPAdvSIMDEnabled64(
+
+2042  C7.2.226   SABD
+ CheckFPAdvSIMDEnabled64(
+
+2044  C7.2.227   SABDL, SABDL2
+ CheckFPAdvSIMDEnabled64(
+
+2046  C7.2.228   SADALP
+ CheckFPAdvSIMDEnabled64(
+
+2048  C7.2.229   SADDL, SADDL2
+ CheckFPAdvSIMDEnabled64(
+
+2050  C7.2.230   SADDLP
+ CheckFPAdvSIMDEnabled64(
+
+2052  C7.2.231   SADDLV
+ CheckFPAdvSIMDEnabled64(
+
+2054  C7.2.232   SADDW, SADDW2
+ CheckFPAdvSIMDEnabled64(
+
+2056  C7.2.233   SCVTF (vector, fixed-point)
+ CheckFPAdvSIMDEnabled64(
+
+2059  C7.2.234   SCVTF (vector, integer)
+ CheckFPAdvSIMDEnabled64(
+
+2062  C7.2.235   SCVTF (scalar, fixed-point)
+ CheckFPEnabled64(
+
+2064  C7.2.236   SCVTF (scalar, integer)
+ CheckFPEnabled64(
+
+2066  C7.2.237   SDOT (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2068  C7.2.238   SDOT (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2070  C7.2.239   SHA1C
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2071  C7.2.240   SHA1H
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2072  C7.2.241   SHA1M
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2073  C7.2.242   SHA1P
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2074  C7.2.243   SHA1SU0
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2075  C7.2.244   SHA1SU1
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2076  C7.2.245   SHA256H2
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2077  C7.2.246   SHA256H
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2078  C7.2.247   SHA256SU0
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2079  C7.2.248   SHA256SU1
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2081  C7.2.249   SHA512H
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2083  C7.2.250   SHA512H2
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2085  C7.2.251   SHA512SU0
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2086  C7.2.252   SHA512SU1
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2088  C7.2.253   SHADD
+ CheckFPAdvSIMDEnabled64(
+
+2090  C7.2.254   SHL
+ CheckFPAdvSIMDEnabled64(
+
+2093  C7.2.255   SHLL, SHLL2
+ CheckFPAdvSIMDEnabled64(
+
+2095  C7.2.256   SHRN, SHRN2
+ CheckFPAdvSIMDEnabled64(
+
+2097  C7.2.257   SHSUB
+ CheckFPAdvSIMDEnabled64(
+
+2099  C7.2.258   SLI
+ CheckFPAdvSIMDEnabled64(
+
+2102  C7.2.259   SM3PARTW1
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2104  C7.2.260   SM3PARTW2
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2106  C7.2.261   SM3SS1
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2108  C7.2.262   SM3TT1A
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2110  C7.2.263   SM3TT1B
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2112  C7.2.264   SM3TT2A
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2114  C7.2.265   SM3TT2B
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2116  C7.2.266   SM4E
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2118  C7.2.267   SM4EKEY
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2120  C7.2.268   SMAX
+ CheckFPAdvSIMDEnabled64(
+
+2122  C7.2.269   SMAXP
+ CheckFPAdvSIMDEnabled64(
+
+2124  C7.2.270   SMAXV
+ CheckFPAdvSIMDEnabled64(
+
+2126  C7.2.271   SMIN
+ CheckFPAdvSIMDEnabled64(
+
+2128  C7.2.272   SMINP
+ CheckFPAdvSIMDEnabled64(
+
+2130  C7.2.273   SMINV
+ CheckFPAdvSIMDEnabled64(
+
+2132  C7.2.274   SMLAL, SMLAL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2135  C7.2.275   SMLAL, SMLAL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2137  C7.2.276   SMLSL, SMLSL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2140  C7.2.277   SMLSL, SMLSL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2142  C7.2.278   SMMLA (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2143  C7.2.279   SMOV
+ CheckFPAdvSIMDEnabled64(
+
+2145  C7.2.280   SMULL, SMULL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2148  C7.2.281   SMULL, SMULL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2150  C7.2.282   SQABS
+ CheckFPAdvSIMDEnabled64(
+
+2152  C7.2.283   SQADD
+ CheckFPAdvSIMDEnabled64(
+
+2154  C7.2.284   SQDMLAL, SQDMLAL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2158  C7.2.285   SQDMLAL, SQDMLAL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2161  C7.2.286   SQDMLSL, SQDMLSL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2165  C7.2.287   SQDMLSL, SQDMLSL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2168  C7.2.288   SQDMULH (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2171  C7.2.289   SQDMULH (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2173  C7.2.290   SQDMULL, SQDMULL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2176  C7.2.291   SQDMULL, SQDMULL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2179  C7.2.292   SQNEG
+ CheckFPAdvSIMDEnabled64(
+
+2181  C7.2.293   SQRDMLAH (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2184  C7.2.294   SQRDMLAH (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2187  C7.2.295   SQRDMLSH (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2190  C7.2.296   SQRDMLSH (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2193  C7.2.297   SQRDMULH (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2196  C7.2.298   SQRDMULH (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2198  C7.2.299   SQRSHL
+ CheckFPAdvSIMDEnabled64(
+
+2200  C7.2.300   SQRSHRN, SQRSHRN2
+ CheckFPAdvSIMDEnabled64(
+
+2203  C7.2.301   SQRSHRUN, SQRSHRUN2
+ CheckFPAdvSIMDEnabled64(
+
+2206  C7.2.302   SQSHL (immediate)
+ CheckFPAdvSIMDEnabled64(
+
+2209  C7.2.303   SQSHL (register)
+ CheckFPAdvSIMDEnabled64(
+
+2211  C7.2.304   SQSHLU
+ CheckFPAdvSIMDEnabled64(
+
+2214  C7.2.305   SQSHRN, SQSHRN2
+ CheckFPAdvSIMDEnabled64(
+
+2217  C7.2.306   SQSHRUN, SQSHRUN2
+ CheckFPAdvSIMDEnabled64(
+
+2220  C7.2.307   SQSUB
+ CheckFPAdvSIMDEnabled64(
+
+2222  C7.2.308   SQXTN, SQXTN2
+ CheckFPAdvSIMDEnabled64(
+
+2225  C7.2.309   SQXTUN, SQXTUN2
+ CheckFPAdvSIMDEnabled64(
+
+2228  C7.2.310   SRHADD
+ CheckFPAdvSIMDEnabled64(
+
+2230  C7.2.311   SRI
+ CheckFPAdvSIMDEnabled64(
+
+2233  C7.2.312   SRSHL
+ CheckFPAdvSIMDEnabled64(
+
+2235  C7.2.313   SRSHR
+ CheckFPAdvSIMDEnabled64(
+
+2238  C7.2.314   SRSRA
+ CheckFPAdvSIMDEnabled64(
+
+2241  C7.2.315   SSHL
+ CheckFPAdvSIMDEnabled64(
+
+2244  C7.2.316   SSHLL, SSHLL2
+ CheckFPAdvSIMDEnabled64(
+
+2246  C7.2.317   SSHR
+ CheckFPAdvSIMDEnabled64(
+
+2249  C7.2.318   SSRA
+ CheckFPAdvSIMDEnabled64(
+
+2252  C7.2.319   SSUBL, SSUBL2
+ CheckFPAdvSIMDEnabled64(
+
+2254  C7.2.320   SSUBW, SSUBW2
+ CheckFPAdvSIMDEnabled64(
+
+2256  C7.2.321   ST1 (multiple structures)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2260  C7.2.322   ST1 (single structure)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2264  C7.2.323   ST2 (multiple structures)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2267  C7.2.324   ST2 (single structure)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2271  C7.2.325   ST3 (multiple structures)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2274  C7.2.326   ST3 (single structure)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2278  C7.2.327   ST4 (multiple structures)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2281  C7.2.328   ST4 (single structure)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2285  C7.2.329   STNP (SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2287  C7.2.330   STP (SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2290  C7.2.331   STR (immediate, SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2294  C7.2.332   STR (register, SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2297  C7.2.333   STUR (SIMD&FP)
+ SetTagCheckedInstruction(
+ Mem[
+ Mem[
+ CheckSPAlignment(
+ CheckFPAdvSIMDEnabled64(
+
+2299  C7.2.334   SUB (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2301  C7.2.335   SUBHN, SUBHN2
+ CheckFPAdvSIMDEnabled64(
+
+2303  C7.2.336   SUDOT (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2305  C7.2.337   SUQADD
+ CheckFPAdvSIMDEnabled64(
+
+2309  C7.2.339   TBL
+ CheckFPAdvSIMDEnabled64(
+
+2311  C7.2.340   TBX
+ CheckFPAdvSIMDEnabled64(
+
+2313  C7.2.341   TRN1
+ CheckFPAdvSIMDEnabled64(
+
+2315  C7.2.342   TRN2
+ CheckFPAdvSIMDEnabled64(
+
+2317  C7.2.343   UABA
+ CheckFPAdvSIMDEnabled64(
+
+2319  C7.2.344   UABAL, UABAL2
+ CheckFPAdvSIMDEnabled64(
+
+2321  C7.2.345   UABD
+ CheckFPAdvSIMDEnabled64(
+
+2323  C7.2.346   UABDL, UABDL2
+ CheckFPAdvSIMDEnabled64(
+
+2325  C7.2.347   UADALP
+ CheckFPAdvSIMDEnabled64(
+
+2327  C7.2.348   UADDL, UADDL2
+ CheckFPAdvSIMDEnabled64(
+
+2329  C7.2.349   UADDLP
+ CheckFPAdvSIMDEnabled64(
+
+2331  C7.2.350   UADDLV
+ CheckFPAdvSIMDEnabled64(
+
+2333  C7.2.351   UADDW, UADDW2
+ CheckFPAdvSIMDEnabled64(
+
+2335  C7.2.352   UCVTF (vector, fixed-point)
+ CheckFPAdvSIMDEnabled64(
+
+2338  C7.2.353   UCVTF (vector, integer)
+ CheckFPAdvSIMDEnabled64(
+
+2341  C7.2.354   UCVTF (scalar, fixed-point)
+ CheckFPEnabled64(
+
+2343  C7.2.355   UCVTF (scalar, integer)
+ CheckFPEnabled64(
+
+2345  C7.2.356   UDOT (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2347  C7.2.357   UDOT (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2349  C7.2.358   UHADD
+ CheckFPAdvSIMDEnabled64(
+
+2351  C7.2.359   UHSUB
+ CheckFPAdvSIMDEnabled64(
+
+2353  C7.2.360   UMAX
+ CheckFPAdvSIMDEnabled64(
+
+2355  C7.2.361   UMAXP
+ CheckFPAdvSIMDEnabled64(
+
+2357  C7.2.362   UMAXV
+ CheckFPAdvSIMDEnabled64(
+
+2359  C7.2.363   UMIN
+ CheckFPAdvSIMDEnabled64(
+
+2361  C7.2.364   UMINP
+ CheckFPAdvSIMDEnabled64(
+
+2363  C7.2.365   UMINV
+ CheckFPAdvSIMDEnabled64(
+
+2365  C7.2.366   UMLAL, UMLAL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2368  C7.2.367   UMLAL, UMLAL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2370  C7.2.368   UMLSL, UMLSL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2373  C7.2.369   UMLSL, UMLSL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2375  C7.2.370   UMMLA (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2376  C7.2.371   UMOV
+ CheckFPAdvSIMDEnabled64(
+
+2378  C7.2.372   UMULL, UMULL2 (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2381  C7.2.373   UMULL, UMULL2 (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2383  C7.2.374   UQADD
+ CheckFPAdvSIMDEnabled64(
+
+2385  C7.2.375   UQRSHL
+ CheckFPAdvSIMDEnabled64(
+
+2387  C7.2.376   UQRSHRN, UQRSHRN2
+ CheckFPAdvSIMDEnabled64(
+
+2390  C7.2.377   UQSHL (immediate)
+ CheckFPAdvSIMDEnabled64(
+
+2393  C7.2.378   UQSHL (register)
+ CheckFPAdvSIMDEnabled64(
+
+2395  C7.2.379   UQSHRN, UQSHRN2
+ CheckFPAdvSIMDEnabled64(
+
+2398  C7.2.380   UQSUB
+ CheckFPAdvSIMDEnabled64(
+
+2400  C7.2.381   UQXTN, UQXTN2
+ CheckFPAdvSIMDEnabled64(
+
+2403  C7.2.382   URECPE
+ CheckFPAdvSIMDEnabled64(
+
+2404  C7.2.383   URHADD
+ CheckFPAdvSIMDEnabled64(
+
+2406  C7.2.384   URSHL
+ CheckFPAdvSIMDEnabled64(
+
+2408  C7.2.385   URSHR
+ CheckFPAdvSIMDEnabled64(
+
+2411  C7.2.386   URSQRTE
+ CheckFPAdvSIMDEnabled64(
+
+2412  C7.2.387   URSRA
+ CheckFPAdvSIMDEnabled64(
+
+2415  C7.2.388   USDOT (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2417  C7.2.389   USDOT (by element)
+ CheckFPAdvSIMDEnabled64(
+
+2419  C7.2.390   USHL
+ CheckFPAdvSIMDEnabled64(
+
+2422  C7.2.391   USHLL, USHLL2
+ CheckFPAdvSIMDEnabled64(
+
+2424  C7.2.392   USHR
+ CheckFPAdvSIMDEnabled64(
+
+2427  C7.2.393   USMMLA (vector)
+ CheckFPAdvSIMDEnabled64(
+
+2428  C7.2.394   USQADD
+ CheckFPAdvSIMDEnabled64(
+
+2430  C7.2.395   USRA
+ CheckFPAdvSIMDEnabled64(
+
+2433  C7.2.396   USUBL, USUBL2
+ CheckFPAdvSIMDEnabled64(
+
+2435  C7.2.397   USUBW, USUBW2
+ CheckFPAdvSIMDEnabled64(
+
+2439  C7.2.399   UZP1
+ CheckFPAdvSIMDEnabled64(
+
+2441  C7.2.400   UZP2
+ CheckFPAdvSIMDEnabled64(
+
+2443  C7.2.401   XAR
+ AArch64.CheckFPAdvSIMDEnabled(
+
+2444  C7.2.402   XTN, XTN2
+ CheckFPAdvSIMDEnabled64(
+
+2446  C7.2.403   ZIP1
+ CheckFPAdvSIMDEnabled64(
+
+2448  C7.2.404   ZIP2
+ CheckFPAdvSIMDEnabled64(
+

@@ -1,0 +1,13 @@
+V
+VL
+isSVEEnable
+UsingAArch32
+CheckFPAdvSIMDEnabled64
+AArch64.CheckFPAdvSIMDEnabled
+CheckFPEnabled64
+SP
+Mem
+MemAtomic
+CheckSPAlignment
+BigEndian
+MemAtomicCompareAndSwap

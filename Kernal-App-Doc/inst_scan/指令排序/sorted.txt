@@ -1,0 +1,282 @@
+C5.2.7   MRS <Xt>,FPCR, Floating-point Control Register									 CPTR_EL2.FPEN == '11' 
+C5.2.7   MSR FPCR,<Xt> Floating-point Control Register									CPTR_EL2.FPEN == '11' 
+C5.2.8   MRS <Xt>,FPSR, Floating-point Status Register									 CPTR_EL2.FPEN == '11' 
+C5.2.8   MSR FPSR,<Xt> Floating-point Status Register									 CPTR_EL2.FPEN == '11' 
+C5.3.14 DC CIVAC, Data or unified Cache line Clean and Invalidate by VA to PoC									 SCTLR_EL2.UCI == '1'
+C5.3.16 DC CVAC, Data or unified Cache line Clean by VA to PoC									 SCTLR_EL2.UCI == '1'
+C5.3.17 DC CVADP, Data or unified Cache line Clean by VA to PoDP									 SCTLR_EL2.UCI == '1'
+C5.3.18 DC CVAP, Data or unified Cache line Clean by VA to PoP									 SCTLR_EL2.UCI == '1'
+C5.3.19 DC CVAU, Data or unified Cache line Clean by VA to PoU									 SCTLR_EL2.UCI == '1'
+C5.3.28 DC ZVA, Data Cache Zero by VA									 SCTLR_EL2.DZE == '1'
+C5.3.31 IC IVAU, Instruction Cache line Invalidate by VA to PoU									 SCTLR_EL2.DZE == '1'
+C6.2.6   ADDG									MTE未开启，指令无定义
+C6.2.40   CASB, CASAB, CASALB, CASLB  									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.41   CASH, CASAH, CASALH, CASLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.42   CASP, CASPA, CASPAL, CASPL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.43   CAS, CASA, CASAL, CASL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.76   DCPS1 									!halted, 指令无定义
+C6.2.77   DCPS2									!halted, 指令无定义
+C6.2.78   DCPS3									!halted, 指令无定义
+C6.2.79   DGH									DGH未开启
+C6.2.81   DRPS									!halted, 指令无定义
+C6.2.96   IRG									MTE未开启，指令无定义
+C6.2.98   LD64B									FEAT_LS64未开启
+C6.2.99   LDADDB, LDADDAB, LDADDALB, LDADDLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.100   LDADDH, LDADDAH, LDADDALH, LDADDLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.101   LDADD, LDADDA, LDADDAL, LDADDL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.102   LDAPR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.103   LDAPRB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.104   LDAPRH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.105   LDAPUR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.106   LDAPURB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.107   LDAPURH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.108   LDAPURSB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.109   LDAPURSH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.110   LDAPURSW									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.111   LDAR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.112   LDARB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.113   LDARH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.114   LDAXP									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.115   LDAXR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.116   LDAXRB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.117   LDAXRH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.118   LDCLRB, LDCLRAB, LDCLRALB, LDCLRLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.119   LDCLRH, LDCLRAH, LDCLRALH, LDCLRLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.120   LDCLR, LDCLRA, LDCLRAL, LDCLRL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.121   LDEORB, LDEORAB, LDEORALB, LDEORLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.122   LDEORH, LDEORAH, LDEORALH, LDEORLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.123   LDEOR, LDEORA, LDEORAL, LDEORL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.124   LDG									MTE未开启，指令无定义
+C6.2.125   LDGM									MTE未开启，指令无定义
+C6.2.126   LDLARB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.127   LDLARH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.128   LDLAR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.129   LDNP									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.130   LDP									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.131   LDPSW									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.132   LDR (immediate)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.134   LDR (register)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.135   LDRAA, LDRAB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.136   LDRB (immediate)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.137   LDRB (register)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.138   LDRH (immediate)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.139   LDRH (register)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.140   LDRSB (immediate)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.141   LDRSB (register)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.142   LDRSH (immediate)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.143   LDRSH (register)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.144   LDRSW (immediate)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.145   LDRSW (literal)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.146   LDRSW (register)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.147   LDSETB, LDSETAB, LDSETALB, LDSETLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.148   LDSETH, LDSETAH, LDSETALH, LDSETLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.149   LDSET, LDSETA, LDSETAL, LDSETL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.150   LDSMAXB, LDSMAXAB, LDSMAXALB, LDSMAXLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.151   LDSMAXH, LDSMAXAH, LDSMAXALH, LDSMAXLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.152   LDSMAX, LDSMAXA, LDSMAXAL, LDSMAXL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.153   LDSMINB, LDSMINAB, LDSMINALB, LDSMINLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.154   LDSMINH, LDSMINAH, LDSMINALH, LDSMINLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.155   LDSMIN, LDSMINA, LDSMINAL, LDSMINL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.156   LDTR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.157   LDTRB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.158   LDTRH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.159   LDTRSB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.160   LDTRSH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.161   LDTRSW									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.162   LDUMAXB, LDUMAXAB, LDUMAXALB, LDUMAXLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.163   LDUMAXH, LDUMAXAH, LDUMAXALH, LDUMAXLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.164   LDUMAX, LDUMAXA, LDUMAXAL, LDUMAXL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.165   LDUMINB, LDUMINAB, LDUMINALB, LDUMINLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.166   LDUMINH, LDUMINAH, LDUMINALH, LDUMINLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.167   LDUMIN, LDUMINA, LDUMINAL, LDUMINL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.168   LDUR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.169   LDURB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.170   LDURH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.171   LDURSB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.172   LDURSH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.173   LDURSW									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.174   LDXP									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.175   LDXR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.176   LDXRB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.177   LDXRH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.217   PSB CSYNC									SPE未开启
+C6.2.247   ST2G									MTE未开启，指令无定义
+C6.2.248   ST64B									FEAT_LS64未开启
+C6.2.249   ST64BV									FEAT_LS64未开启
+C6.2.250   ST64BV0									FEAT_LS64未开启
+C6.2.251 STADDB, STADDLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.252 STADDH, STADDLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.253 STADD, STADDL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.254 STCLRB, STCLRLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.255 STCLRH, STCLRLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.256 STCLR, STCLRL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.257 STEORB, STEORLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.258 STEORH, STEORLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.259 STEOR, STEORL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.260   STG									MTE未开启，指令无定义
+C6.2.261   STGM									MTE未开启，指令无定义
+C6.2.262   STGP									MTE未开启，指令无定义
+C6.2.263   STLLRB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.264   STLLRH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.265   STLLR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.266   STLR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.267   STLRB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.268   STLRH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.269   STLUR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.270   STLURB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.271   STLURH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.272   STLXP									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.273   STLXR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.274   STLXRB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.275   STLXRH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.276   STNP									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.277   STP									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.278   STR (immediate)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.279   STR (register)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.280   STRB (immediate)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.281   STRB (register)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.282   STRH (immediate)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.283   STRH (register)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.284 STSETB, STSETLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.285 STSETH, STSETLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.286 STSET, STSETL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.287 STSMAXB, STSMAXLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.288 STSMAXH, STSMAXLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.289 STSMAX, STSMAXL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.290 STSMINB, STSMINLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.291 STSMINH, STSMINLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.292 STSMIN, STSMINL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.293   STTR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.294   STTRB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.295   STTRH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.296 STUMAXB, STUMAXLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.297 STUMAXH, STUMAXLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.298 STUMAX, STUMAXL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.299 STUMINB, STUMINLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.300 STUMINH, STUMINLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.301 STUMIN, STUMINL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.302   STUR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.303   STURB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.304   STURH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.305   STXP									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.306   STXR									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.307   STXRB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.308   STXRH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.309   STZ2G									MTE未开启，指令无定义
+C6.2.310   STZG									MTE未开启，指令无定义
+C6.2.311   STZGM									MTE未开启，指令无定义
+C6.2.315 SUBG									MTE未开启，指令无定义
+C6.2.322   SWPB, SWPAB, SWPALB, SWPLB									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.323   SWPH, SWPAH, SWPALH, SWPLH									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.324   SWP, SWPA, SWPAL, SWPL									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C6.2.333   TSB CSYNC									TRF未开启
+C6.2.348   WFE									SCTLR_EL2.nTWE = 1
+C6.2.349 WFET									FEAT_WFxT未开启
+C6.2.350 WFIT									FEAT_WFxT未开启
+C7.2.177   LD1 (multiple structures)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.178   LD1 (single structure)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.179   LD1R									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.180   LD2 (multiple structures)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.181   LD2 (single structure)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.182   LD2R									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.183   LD3 (multiple structures)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.184   LD3 (single structure)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.185   LD3R									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.186   LD4 (multiple structures)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.187   LD4 (single structure)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.188   LD4R									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.189   LDNP (SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.190   LDP (SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.191   LDR (immediate, SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.192   LDR (literal, SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.193   LDR (register, SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.194   LDUR (SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.321   ST1 (multiple structures)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.322   ST1 (single structure)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.323   ST2 (multiple structures)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.324   ST2 (single structure)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.325   ST3 (multiple structures)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.326   ST3 (single structure)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.327   ST4 (multiple structures)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.328   ST4 (single structure)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.329   STNP (SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.330   STP (SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.331   STR (immediate, SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.332   STR (register, SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+C7.2.333   STUR (SIMD&FP)									SCTLR_EL2.SA0 =1, SCTLR_EL2.SA = 1,SCTLR_EL2.E0E = 0,SCTLR_EL2.EE = 0
+DC CGDVAC, Clean of Data and Allocation Tags by VA to PoC									MTE未开启，指令无定义
+DC CGDVADP, Clean of Data and Allocation Tags by VA to PoDP									MTE未开启，指令无定义
+DC CGDVAP, Clean of Data and Allocation Tags by VA to PoP									MTE未开启，指令无定义
+DC CGVAC, Clean of Allocation Tags by VA to PoC									MTE未开启，指令无定义
+DC CGVADP, Clean of Allocation Tags by VA to PoDP									MTE未开启，指令无定义
+DC CGVAP, Clean of Allocation Tags by VA to PoP									MTE未开启，指令无定义
+DC CIGDVAC, Clean and Invalidate of Data and Allocation Tags by VA to PoC									MTE未开启，指令无定义
+DC CIGVAC, Clean and Invalidate of Allocation Tags by VA to PoC									MTE未开启，指令无定义
+DC GVA, Data Cache set Allocation Tag by VA									MTE未开启，指令无定义
+DC GZVA, Data Cache set Allocation Tags and Zero by VA									MTE未开启，指令无定义
+D13.2.36   MRS <Xt>,DCZID_EL0, Data Cache Zero ID register									EL2Enabled(), HCR_EL2.<E2H,TGE> == '11'
+D13.2.57  MRS <Xt>,ID_AA64AFR0_EL1, AArch64 Auxiliary Feature Register 0									FEAT_IDST开启
+D13.2.58  MRS <Xt>,ID_AA64AFR1_EL1, AArch64 Auxiliary Feature Register 1									FEAT_IDST开启
+D13.2.60  MRS <Xt>,ID_AA64DFR1_EL1, AArch64 Debug Feature Register 1									FEAT_IDST开启
+D13.2.63  MRS <Xt>,ID_AA64ISAR2_EL1, AArch64 Instruction Set Attribute Register 2									FEAT_IDST开启
+D13.2.68  MRS <Xt>,ID_AA64PFR1_EL1, AArch64 Processor Feature Register 1									FEAT_IDST开启
+D13.2.98  MRS <Xt>,MIDR_EL1, Main ID Register									FEAT_IDST开启
+D13.2.104 MRS <Xt>,REVIDR_EL1, Revision ID Register									FEAT_IDST开启
+D13.2.109   MRS <Xt>, RNDR, Random Number									RNDR未开启，指令无定义
+D13.2.110   MRS <Xt>, RNDRRS, Reseeded Random Number									RNDR未开启，指令无定义
+D13.2.130  MRS <Xt>,TPIDR_EL0, EL0 Read/Write Software Thread ID Register									EL2Enabled(), HCR_EL2.<E2H,TGE> == '11'
+D13.2.130   MSR TPIDR_EL0,<Xt> EL0 Read/Write Software Thread ID Register									EL2Enabled(), HCR_EL2.<E2H,TGE> == '11'
+D13.2.134  MRS <Xt>,TPIDRRO_EL0, EL0 Read-Only Software Thread ID Register									EL2Enabled(), HCR_EL2.<E2H,TGE> == '11'
+D13.4.1   MRS <Xt>,PMCCFILTR_EL0, Performance Monitors Cycle Count Filter Register									PMU未开启，指令无定义
+D13.4.1    MSR PMCCFILTR_EL0,<Xt> Performance M onitors Cycle Count Filter Register									PMU未开启，指令无定义
+D13.4.2   MRS <Xt>,PMCCNTR_EL0, Performance Monitors Cycle Count Register									PMU未开启，指令无定义
+D13.4.2    MSR PMCCNTR_EL0,<Xt> Performance Monitors Cycle Count Register									PMU未开启，指令无定义
+D13.4.3   MRS <Xt>,PMCEID0_EL0, Performance Monitors Common Event Identification register 0									PMU未开启，指令无定义
+D13.4.4   MRS <Xt>,PMCEID1_EL0, Performance Monitors Common Event Identification register 1									PMU未开启，指令无定义
+D13.4.5   MRS <Xt>,PMCNTENCLR_EL0, Performance Monitors Count Enable Clear register									PMU未开启，指令无定义
+D13.4.5    MSR PMCNTENCLR_EL0,<Xt> Performance Monitors Count Enable Clear register									PMU未开启，指令无定义
+D13.4.6   MRS <Xt>,PMCNTENSET_EL0, Performance Monitors Count Enable Set register									PMU未开启，指令无定义
+D13.4.6    MSR PMCNTENSET_EL0,<Xt> Performance Monitors Count Enable Set register									PMU未开启，指令无定义
+D13.4.7   MRS <Xt>,PMCR_EL0, Performance Monitors Control Register									PMU未开启，指令无定义
+D13.4.7    MSR PMCR_EL0,<Xt> Performance Monitors Control Register									PMU未开启，指令无定义
+D13.4.8   MRS <Xt>,PMEVCNTR<n>_EL0, n = 0 - 30									PMU未开启，指令无定义
+D13.4.8    MSR PMEVCNTR<n>_EL0,<Xt> n = 0 - 30									PMU未开启，指令无定义
+D13.4.9   MRS <Xt>,PMEVTYPER<n>_EL0, n = 0 - 30									PMU未开启，指令无定义
+D13.4.9    MSR PMEVTYPER<n>_EL0,<Xt> n = 0 - 30									PMU未开启，指令无定义
+D13.4.13  MRS <Xt>,PMOVSCLR_EL0, Performance Monito rs Overflow Flag Status Clear Register									PMU未开启，指令无定义
+D13.4.13   MSR PMOVSCLR_EL0,<Xt> Performance Monito rs Overflow Flag Status Clear Register									PMU未开启，指令无定义
+D13.4.14  MRS <Xt>,PMOVSSET_EL0, Performance Monitors Overflow Flag Status Set register									PMU未开启，指令无定义
+D13.4.14   MSR PMOVSSET_EL0,<Xt> Performance Monitors Overflow Flag Status Set register									PMU未开启，指令无定义
+D13.4.15  MRS <Xt>,PMSELR_EL0, Performance Monitors Event Counter Selection Register									PMU未开启，指令无定义
+D13.4.15   MSR PMSELR_EL0,<Xt> Performance Monitors Event Counter Selection Register									PMU未开启，指令无定义
+D13.4.16   MSR PMSWINC_EL0,<Xt> Performance Monitors Software Increment register									PMU未开启，指令无定义
+D13.4.17  MRS <Xt>,PMUSERENR_EL0, Performance Monitors User Enable Register									PMU未开启，指令无定义
+D13.4.18  MRS <Xt>,PMXEVCNTR_EL0, Performance M onitors Selected Event Count Register									PMU未开启，指令无定义
+D13.4.18   MSR PMXEVCNTR_EL0,<Xt> Performance M onitors Selected Event Count Register									PMU未开启，指令无定义
+D13.4.19  MRS <Xt>,PMXEVTYPER_EL0, Performance Mo nitors Selected Event Type Register									PMU未开启，指令无定义
+D13.4.19   MSR PMXEVTYPER_EL0,<Xt> Performance Mo nitors Selected Event Type Register									PMU未开启，指令无定义
+D13.5.1   MRS <Xt>,AMCFGR_EL0, Activity Monitors Configuration Register									AMU未开启，指令无定义
+D13.5.2   MRS <Xt>,AMCG1IDR_EL0, Activity Monitors Counter Group 1 Identification Register									AMU未开启，指令无定义
+D13.5.3   MRS <Xt>,AMCGCR_EL0, Activity Monitors Counter Group Configuration Register									AMU未开启，指令无定义
+D13.5.4   MRS <Xt>,AMCNTENCLR0_EL0, Activity Moni tors Count Enable Clear Register 0									AMU未开启，指令无定义
+D13.5.4   MSR AMCNTENCLR0_EL0,<Xt> Activity Monitors Count Enable Clear Register 0									AMU未开启，指令无定义
+D13.5.5   MRS <Xt>,AMCNTENCLR1_EL0, Activity Moni tors Count Enable Clear Register 1									AMU未开启，指令无定义
+D13.5.5   MSR AMCNTENCLR1_EL0,<Xt> Activity Moni tors Count Enable Clear Register 1									AMU未开启，指令无定义
+D13.5.6   MRS <Xt>,AMCNTENSET0_EL0, Activity Monitors Count Enable Set Register 0									AMU未开启，指令无定义
+D13.5.6   MSR AMCNTENSET0_EL0,<Xt> Activity Monitors Count Enable Set Register 0									AMU未开启，指令无定义
+D13.5.7   MRS <Xt>,AMCNTENSET1_EL0, Activity Monitors Count Enable Set Register 1									AMU未开启，指令无定义
+D13.5.7   MSR AMCNTENSET1_EL0,<Xt> Activity Monitors Count Enable Set Register 1									AMU未开启，指令无定义
+D13.5.8   MRS <Xt>,AMCR_EL0, Activity Monitors Control Register									AMU未开启，指令无定义
+D13.5.8   MSR AMCR_EL0,<Xt> Activity Monitors Control Register									AMU未开启，指令无定义
+D13.5.9   MRS <Xt>,AMEVCNTR0<n>_EL0, n = 0 - 3									AMU未开启，指令无定义
+D13.5.9   MSR AMEVCNTR0<n>_EL0,<Xt> n = 0 - 3									AMU未开启，指令无定义
+D13.5.10  MRS <Xt>,AMEVCNTR1<n>_EL0, n = 0 - 15									AMU未开启，指令无定义
+D13.5.10  MSR AMEVCNTR1<n>_EL0,<Xt> n = 0 - 15									AMU未开启，指令无定义
+D13.5.13  MRS <Xt>,AMEVTYPER0<n>_EL0, n = 0 - 3									AMU未开启，指令无定义
+D13.5.14  MRS <Xt>,AMEVTYPER1<n>_EL0, n = 0 - 15									AMU未开启，指令无定义
+D13.5.14  MSR AMEVTYPER1<n>_EL0,<Xt> n = 0 - 15									AMU未开启，指令无定义
+D13.5.15  MRS <Xt>,AMUSERENR_EL0, Activity Monitors User Enable Register									AMU未开启，指令无定义
+D13.8.1    MRS <Xt>,CNTFRQ_EL0, Counter-timer Frequency register									CNTHCTL_EL2.<EL0PCTEN,EL0VCTEN> == '01'
+D13.8.1     MSR CNTFRQ_EL0,,<Xt> Counter-timer Frequency register									CNTHCTL_EL2.<EL0PCTEN,EL0VCTEN> == '01'
+D13.8.28   MRS <Xt>,CNTVCTSS_EL0, Counter-timer Self-Synchronized Virtual Count register									CNTHCTL_EL2.EL0VCTEN == '1'
+D13.8.29   MRS <Xt>,CNTVCT_EL0, Counter-timer Virtual Count register									CNTHCTL_EL2.EL0VCTEN == '1'

@@ -1,0 +1,3 @@
+aarch64/exceptions/traps/CheckFPAdvSIMDEnabled64
+ AArch64.CheckFPAdvSIMDEnabled(
+

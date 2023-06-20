@@ -1,0 +1,215 @@
+aarch64/debug/breakpoint/AArch64.BreakpointValueMatch
+ AArch64.VAMax(
+
+aarch64/debug/watchpoint/AArch64.WatchpointByteMatch
+ AArch64.VAMax(
+
+aarch64/exceptions/aborts/AArch64.AbortSyndrome
+ AArch64.FaultSyndrome(
+
+aarch64/exceptions/aborts/AArch64.DataAbort
+ AArch64.TakeException(
+
+aarch64/exceptions/aborts/AArch64.InstructionAbort
+ AArch64.TakeException(
+
+aarch64/exceptions/aborts/AArch64.PCAlignmentFault
+ AArch64.TakeException(
+
+aarch64/exceptions/aborts/AArch64.RaiseTagCheckFault
+ AArch64.TakeException(
+
+aarch64/exceptions/aborts/AArch64.SPAlignmentFault
+ AArch64.TakeException(
+
+aarch64/exceptions/aborts/BranchTargetException
+ AArch64.TakeException(
+
+aarch64/exceptions/async/AArch64.TakePhysicalFIQException
+ AArch64.TakeException(
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/async/AArch64.TakePhysicalIRQException
+ AArch64.TakeException(
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/async/AArch64.TakeVirtualFIQException
+ AArch64.TakeException(
+
+aarch64/exceptions/async/AArch64.TakeVirtualIRQException
+ AArch64.TakeException(
+
+aarch64/exceptions/debug/AArch64.BreakpointException
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/debug/AArch64.SoftwareBreakpoint
+ AArch64.TakeException(
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/debug/AArch64.VectorCatchException
+ AArch64.TakeException(
+
+aarch64/exceptions/debug/AArch64.WatchpointException
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/exceptions/AArch64.ReportException
+ AArch64.ExceptionClass(
+
+aarch64/exceptions/ieeefp/AArch64.FPTrappedException
+ AArch64.TakeException(
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/traps/AArch64.AArch32SystemAccessTrap
+ AArch64.TakeException(
+
+aarch64/exceptions/traps/AArch64.AdvSIMDFPAccessTrap
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/traps/AArch64.CheckForERetTrap
+ AArch64.TakeException(
+
+aarch64/exceptions/traps/AArch64.CheckForSMCUndefOrTrap
+ AArch64.TakeException(
+
+aarch64/exceptions/traps/AArch64.CheckForSVCTrap
+ AArch64.TakeException(
+
+aarch64/exceptions/traps/AArch64.CheckForWFxTrap
+ AArch64.WFxTrap(
+
+aarch64/exceptions/traps/AArch64.CheckIllegalState
+ AArch64.TakeException(
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/traps/AArch64.MonitorModeTrap
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/traps/AArch64.SystemAccessTrap
+ AArch64.TakeException(
+ AArch64.SystemAccessTrapSyndrome(
+
+aarch64/exceptions/traps/AArch64.UndefinedFault
+ AArch64.TakeException(
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/exceptions/traps/LDST64BTrap
+ AArch64.TakeException(
+
+aarch64/functions/cache/AArch64.TagMemZero
+ AArch64.MemTag[
+
+aarch64/functions/memory/Mem
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+ AArch64.MemSingle[
+
+aarch64/functions/memory/MemAtomic
+ AArch64.TranslateAddressForAtomicAccess(
+
+aarch64/functions/memory/MemAtomicCompareAndSwap
+ AArch64.TranslateAddressForAtomicAccess(
+
+aarch64/functions/memory/MemStore64B
+ AArch64.MemSingle[
+ MemStore64BWithRet(
+
+aarch64/functions/pac/auth/AArch64.PACFailException
+ AArch64.TakeException(
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/functions/pac/calcbottompacbit/CalculateBottomPACBit
+ AArch64.VAMax(
+
+aarch64/functions/pac/trappacuse/TrapPACUse
+ AArch64.TakeException(
+
+aarch64/functions/sve/MemNF
+ MemSingleNF[
+ MemSingleNF[
+ MemSingleNF[
+
+aarch64/functions/sve/SVEAccessTrap
+ AArch64.TakeException(
+ AArch64.TakeException(
+
+aarch64/instrs/system/sysops/dc/AArch64.DC
+ DecodeSW(
+
+aarch64/translation/debug/AArch64.CheckBreakpoint
+ Halt(
+
+aarch64/translation/debug/AArch64.CheckWatchpoint
+ Halt(
+
+aarch64/translation/vmsa_translation/AArch64.MemSwapTableDesc
+ HandleExternalTTWAbort(
+ HandleExternalTTWAbort(
+
+shared/debug/halting/ExitDebugState
+ BranchTo(
+ BranchTo(
+
+shared/debug/haltingevents/CheckExceptionCatch
+ Halt(
+
+shared/debug/haltingevents/CheckPendingOSUnlockCatch
+ Halt(
+
+shared/debug/haltingevents/CheckPendingResetCatch
+ Halt(
+
+shared/debug/haltingevents/CheckResetCatch
+ Halt(
+
+shared/debug/haltingevents/CheckSoftwareAccessToDebugRegisters
+ Halt(
+
+shared/debug/haltingevents/ExternalDebugRequest
+ Halt(
+
+shared/debug/softwarestep/CheckSoftwareStep
+ AArch64.SoftwareStepException(
+
+shared/functions/externalaborts/HandleExternalReadAbort
+ HandleExternalAbort(
+
+shared/functions/externalaborts/HandleExternalWriteAbort
+ HandleExternalAbort(
+
+shared/functions/system/BranchTargetCheck
+ AArch64.ExecutingBROrBLROrRetInstr(
+ AArch64.ExecutingBTIInstr(
+
+shared/functions/system/Hint_WFE
+ AArch64.WFxTrap(
+ WaitForEvent(
+
+shared/functions/system/Hint_WFI
+ WaitForInterrupt(
+
+shared/translation/vmsa/FetchDescriptor
+ HandleExternalTTWAbort(

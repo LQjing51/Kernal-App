@@ -1,0 +1,25 @@
+ 414 C5.2.3   DIT, Data Independent Timing
+ 424 C5.2.6   ELR_EL3, Exception Link Register (EL3)
+ 448 C5.2.13   SP_EL2, Stack Pointer (EL2)
+ 477 C5.2.19   SPSR_EL3, Saved Program Status Register (EL3)
+ 500 C5.2.23   SSBS, Speculative Store Bypass Safe
+ 3056 D13.2.4   ACTLR_EL3, Auxiliary Control Register (EL3)
+ 3064 D13.2.7   AFSR0_EL3, Auxiliary Fault Status Register 0 (EL3)
+ 3072 D13.2.10   AFSR1_EL3, Auxiliary Fault Status Register 1 (EL3)
+ 3081 D13.2.14   AMAIR_EL3, Auxiliary Memory Attribute Indirection Register (EL3)
+ 3131 D13.2.32   CPTR_EL3, Architectural Feature Trap Register (EL3)
+ 3237 D13.2.39   ESR_EL3, Exception Syndrome Register (EL3)
+ 3290 D13.2.42   FAR_EL3, Fault Address Register (EL3)
+ 3566 D13.2.97   MAIR_EL3, Memory Attribute Indirection Register (EL3)
+ 3608 D13.2.115   SCR_EL3, Secure Configuration Register
+ 3681 D13.2.122   SCXTNUM_EL3, EL3 Read/Write Software Context Number
+ 3720 D13.2.125   TCR_EL3, Translation Control Register (EL3)
+ 3739 D13.2.129   TFSR_EL3, Tag Fault Status Register (EL3)
+ 3747 D13.2.133   TPIDR_EL3, EL3 Software Thread ID Register
+ 3761 D13.2.137   TTBR0_EL3, Translation Table Base Register 0 (EL3)
+ 3779 D13.2.142   VBAR_EL3, Vector Base Address Register (EL3)
+ 3881 D13.3.18   MDCR_EL3, Monitor Debug Configuration Register (EL3)
+ 3919 D13.3.28   SDER32_EL3, AArch32 Secure Debug Enable Register
+ 4218 D13.8.21   CNTPS_CTL_EL1, Counter-time r Physical Secure Timer Control register
+ 4223 D13.8.23   CNTPS_CVAL_EL1, Counter-timer Physical Secure Timer CompareValue register
+ 4225 D13.8.24   CNTPS_TVAL_EL1, Counter-timer Physical Secure Timer TimerValue register

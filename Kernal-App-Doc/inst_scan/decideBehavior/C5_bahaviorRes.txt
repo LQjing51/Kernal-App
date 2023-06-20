@@ -1,0 +1,80 @@
+C5.3.2 DC CGDVAC, Clean of Data and Allocation Tags by VA to PoC
+True
+True
+True
+C5.3.3 DC CGDVADP, Clean of Data and Allocation Tags by VA to PoDP
+True
+True
+True
+C5.3.4 DC CGDVAP, Clean of Data and Allocation Tags by VA to PoP
+True
+True
+True
+C5.3.6 DC CGVAC, Clean of Allocation Tags by VA to PoC
+True
+True
+True
+C5.3.7 DC CGVADP, Clean of Allocation Tags by VA to PoDP
+True
+True
+True
+C5.3.8 DC CGVAP, Clean of Allocation Tags by VA to PoP
+True
+True
+True
+C5.3.10 DC CIGDVAC, Clean and Invalidate of Data and Allocation Tags by VA to PoC
+True
+True
+True
+C5.3.12 DC CIGVAC, Clean and Invalidate of Allocation Tags by VA to PoC
+True
+True
+True
+C5.3.14 DC CIVAC, Data or unified Cache line Clean and Invalidate by VA to PoC
+True
+True
+True
+C5.3.16 DC CVAC, Data or unified Cache line Clean by VA to PoC
+True
+True
+True
+C5.3.17 DC CVADP, Data or unified Cache line Clean by VA to PoDP
+True
+True
+True
+C5.3.18 DC CVAP, Data or unified Cache line Clean by VA to PoP
+True
+True
+True
+C5.3.19 DC CVAU, Data or unified Cache line Clean by VA to PoU
+True
+True
+True
+C5.3.20 DC GVA, Data Cache set Allocation Tag by VA
+True
+True
+True
+C5.3.21 DC GZVA, Data Cache set Allocation Tags and Zero by VA
+True
+True
+True
+C5.3.28 DC ZVA, Data Cache Zero by VA
+True
+True
+True
+C5.3.31 IC IVAU, Instruction Cache line Invalidate by VA to PoU
+True
+True
+True
+C5.6.1 CFP RCTX, Control Flow Prediction Restriction by Context
+Undefine
+True
+True
+C5.6.2 CPP RCTX, Cache Prefetch Prediction Restriction by Context
+Undefine
+True
+True
+C5.6.3 DVP RCTX, Data Value Prediction Restriction by Context
+Undefine
+True
+True

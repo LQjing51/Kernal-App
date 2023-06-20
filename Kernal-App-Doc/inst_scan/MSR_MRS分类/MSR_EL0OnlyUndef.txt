@@ -1,0 +1,201 @@
+ 417 C5.2.4   ELR_EL1, Exception Link Register (EL1)
+ 417 C5.2.4   ELR_EL12, Exception Link Register (EL1)
+ 421 C5.2.5   ELR_EL2, Exception Link Register (EL2)
+ 424 C5.2.6   ELR_EL3, Exception Link Register (EL3)
+ 442 C5.2.10   PAN, Privileged Access Never
+ 444 C5.2.11   SP_EL0, Stack Pointer (EL0)
+ 446 C5.2.12   SP_EL1, Stack Pointer (EL1)
+ 448 C5.2.13   SP_EL2, Stack Pointer (EL2)
+ 451 C5.2.15   SPSel, Stack Pointer Select
+ 453 C5.2.16   SPSR_abt, Saved Program Status Register (Abort mode)
+ 458 C5.2.17   SPSR_EL1, Saved Program Status Register (EL1)
+ 458 C5.2.17   SPSR_EL12, Saved Program Status Register (EL1)
+ 468 C5.2.18   SPSR_EL2, Saved Program Status Register (EL2)
+ 477 C5.2.19   SPSR_EL3, Saved Program Status Register (EL3)
+ 485 C5.2.20   SPSR_fiq, Saved Program Status Register (FIQ mode)
+ 490 C5.2.21   SPSR_irq, Saved Program Status Register (IRQ mode)
+ 495 C5.2.22   SPSR_und, Saved Program Status Register (Undefined mode)
+ 504 C5.2.25   UAO, User Access Override
+ 3050 D13.2.1   ACCDATA_EL1, Accelerator Data
+ 3052 D13.2.2   ACTLR_EL1, Auxiliary Control Register (EL1)
+ 3054 D13.2.3   ACTLR_EL2, Auxiliary Control Register (EL2)
+ 3056 D13.2.4   ACTLR_EL3, Auxiliary Control Register (EL3)
+ 3058 D13.2.5   AFSR0_EL1, Auxiliary Fault Status Register 0 (EL1)
+ 3058 D13.2.5   AFSR0_EL12, Auxiliary Fault Status Register 0 (EL1)
+ 3061 D13.2.6   AFSR0_EL2, Auxiliary Fault Status Register 0 (EL2)
+ 3064 D13.2.7   AFSR0_EL3, Auxiliary Fault Status Register 0 (EL3)
+ 3066 D13.2.8   AFSR1_EL1, Auxiliary Fault Status Register 1 (EL1)
+ 3066 D13.2.8   AFSR1_EL12, Auxiliary Fault Status Register 1 (EL1)
+ 3069 D13.2.9   AFSR1_EL2, Auxiliary Fault Status Register 1 (EL2)
+ 3072 D13.2.10   AFSR1_EL3, Auxiliary Fault Status Register 1 (EL3)
+ 3075 D13.2.12   AMAIR_EL1, Auxiliary Memory Attribute Indirection Register (EL1)
+ 3075 D13.2.12   AMAIR_EL12, Auxiliary Memory Attribute Indirection Register (EL1)
+ 3078 D13.2.13   AMAIR_EL2, Auxiliary Memory Attribute Indirection Register (EL2)
+ 3081 D13.2.14   AMAIR_EL3, Auxiliary Memory Attribute Indirection Register (EL3)
+ 3083 D13.2.15   APDAKeyHi_EL1, Pointer Authentication Key A for Data (bits[127:64]) 
+ 3085 D13.2.16   APDAKeyLo_EL1, Pointer Authentication Key A for Data (bits[63:0]) 
+ 3087 D13.2.17   APDBKeyHi_EL1, Pointer Authentication Key B for Data (bits[127:64]) 
+ 3089 D13.2.18   APDBKeyLo_EL1, Pointer Authentication Key B for Data (bits[63:0]) 
+ 3091 D13.2.19   APGAKeyHi_EL1, Pointer Authentication Key A for Code (bits[127:64]) 
+ 3093 D13.2.20   APGAKeyLo_EL1, Pointer Authentication Key A for Code (bits[63:0]) 
+ 3095 D13.2.21   APIAKeyHi_EL1, Pointer Authentication Key A for Instruction (bits[127:64]) 
+ 3097 D13.2.22   APIAKeyLo_EL1, Pointer Authentication Key A for Instruction (bits[63:0]) 
+ 3099 D13.2.23   APIBKeyHi_EL1, Pointer Authentication Key B for Instruction (bits[127:64]) 
+ 3101 D13.2.24   APIBKeyLo_EL1, Pointer Authentication Key B for Instruction (bits[63:0]) 
+ 3111 D13.2.28   CONTEXTIDR_EL1, Context ID Register (EL1)
+ 3111 D13.2.28   CONTEXTIDR_EL12, Context ID Register (EL1)
+ 3114 D13.2.29   CONTEXTIDR_EL2, Context ID Register (EL2)
+ 3117 D13.2.30   CPACR_EL1, Architectural Feature Access Control Register
+ 3117 D13.2.30   CPACR_EL12, Architectural Feature Access Control Register
+ 3122 D13.2.31   CPTR_EL2, Architectural Feature Trap Register (EL2)
+ 3131 D13.2.32   CPTR_EL3, Architectural Feature Trap Register (EL3)
+ 3135 D13.2.33   CSSELR_EL1, Cache Size Selection Register
+ 3141 D13.2.35   DACR32_EL2, Domain Access Control Register
+ 3145 D13.2.37   ESR_EL1, Exception Syndrome Register (EL1)
+ 3145 D13.2.37   ESR_EL12, Exception Syndrome Register (EL1)
+ 3191 D13.2.38   ESR_EL2, Exception Syndrome Register (EL2)
+ 3237 D13.2.39   ESR_EL3, Exception Syndrome Register (EL3)
+ 3281 D13.2.40   FAR_EL1, Fault Address Register (EL1)
+ 3281 D13.2.40   FAR_EL12, Fault Address Register (EL1)
+ 3286 D13.2.41   FAR_EL2, Fault Address Register (EL2)
+ 3290 D13.2.42   FAR_EL3, Fault Address Register (EL3)
+ 3292 D13.2.43   FPEXC32_EL2, Floating-Point Exception Control register
+ 3298 D13.2.44   GCR_EL1, Tag Control Register.
+ 3301 D13.2.46   HACR_EL2, Hypervisor Auxiliary Control Register
+ 3303 D13.2.47   HAFGRTR_EL2, Hypervisor Activity Monitors Fine-Grained Read Trap Register
+ 3307 D13.2.48   HCR_EL2, Hypervisor Configuration Register
+ 3339 D13.2.49   HCRX_EL2, Extended Hypervisor Configuration Register
+ 3343 D13.2.50   HDFGRTR_EL2, Hypervisor Debug Fine-Grained Read Trap Register
+ 3362 D13.2.51   HDFGWTR_EL2, Hypervisor Debug Fine-Grained Write Trap Register
+ 3380 D13.2.52   HFGITR_EL2, Hypervisor Fine-Grained Instruction Trap Register
+ 3399 D13.2.53   HFGRTR_EL2, Hypervisor Fine-Grained Read Trap Register
+ 3415 D13.2.54   HFGWTR_EL2, Hypervisor Fine-Grained Write Trap Register
+ 3428 D13.2.55   HPFAR_EL2, Hypervisor IPA Fault Address Register
+ 3431 D13.2.56   HSTR_EL2, Hypervisor System Trap Register
+ 3535 D13.2.88   IFSR32_EL2, Instruction Fault Status Register (EL2)
+ 3542 D13.2.90   LORC_EL1, LORegion Control (EL1)
+ 3545 D13.2.91   LOREA_EL1, LORegion End Address (EL1)
+ 3550 D13.2.93   LORN_EL1, LORegion Number (EL1)
+ 3553 D13.2.94   LORSA_EL1, LORegion Start Address (EL1)
+ 3557 D13.2.95   MAIR_EL1, Memory Attribute Indirection Register (EL1)
+ 3557 D13.2.95   MAIR_EL12, Memory Attribute Indirection Register (EL1)
+ 3562 D13.2.96   MAIR_EL2, Memory Attribute Indirection Register (EL2)
+ 3566 D13.2.97   MAIR_EL3, Memory Attribute Indirection Register (EL3)
+ 3584 D13.2.103   PAR_EL1, Physical Address Register
+ 3591 D13.2.105   RGSR_EL1, Random Allocation Tag Seed Register.
+ 3608 D13.2.115   SCR_EL3, Secure Configuration Register
+ 3621 D13.2.116   SCTLR_EL1, System Control Register (EL1)
+ 3621 D13.2.116   SCTLR_EL12, System Control Register (EL1)
+ 3641 D13.2.117   SCTLR_EL2, System Control Register (EL2)
+ 3661 D13.2.118   SCTLR_EL3, System Control Register (EL3)
+ 3674 D13.2.120   SCXTNUM_EL1, EL1 Read/Write Software Context Number
+ 3674 D13.2.120   SCXTNUM_EL12, EL1 Read/Write Software Context Number
+ 3678 D13.2.121   SCXTNUM_EL2, EL2 Read/Write Software Context Number
+ 3681 D13.2.122   SCXTNUM_EL3, EL3 Read/Write Software Context Number
+ 3683 D13.2.123   TCR_EL1, Translation Control Register (EL1)
+ 3683 D13.2.123   TCR_EL12, Translation Control Register (EL1)
+ 3698 D13.2.124   TCR_EL2, Translation Control Register (EL2)
+ 3720 D13.2.125   TCR_EL3, Translation Control Register (EL3)
+ 3728 D13.2.126   TFSRE0_EL1, Tag Fault Status Register (EL0).
+ 3730 D13.2.127   TFSR_EL1, Tag Fault Status Register (EL1)
+ 3730 D13.2.127   TFSR_EL12, Tag Fault Status Register (EL1)
+ 3735 D13.2.128   TFSR_EL2, Tag Fault Status Register (EL2)
+ 3739 D13.2.129   TFSR_EL3, Tag Fault Status Register (EL3)
+ 3743 D13.2.131   TPIDR_EL1, EL1 Software Thread ID Register
+ 3745 D13.2.132   TPIDR_EL2, EL2 Software Thread ID Register
+ 3747 D13.2.133   TPIDR_EL3, EL3 Software Thread ID Register
+ 3749 D13.2.134   TPIDRRO_EL0, EL0 Read-Only Software Thread ID Register
+ 3751 D13.2.135   TTBR0_EL1, Translation Table Base Register 0 (EL1)
+ 3751 D13.2.135   TTBR0_EL12, Translation Table Base Register 0 (EL1)
+ 3756 D13.2.136   TTBR0_EL2, Translation Table Base Register 0 (EL2)
+ 3761 D13.2.137   TTBR0_EL3, Translation Table Base Register 0 (EL3)
+ 3764 D13.2.138   TTBR1_EL1, Translation Table Base Register 1 (EL1)
+ 3764 D13.2.138   TTBR1_EL12, Translation Table Base Register 1 (EL1)
+ 3769 D13.2.139   TTBR1_EL2, Translation Table Base Register 1 (EL2)
+ 3773 D13.2.140   VBAR_EL1, Vector Base Address Register (EL1)
+ 3773 D13.2.140   VBAR_EL12, Vector Base Address Register (EL1)
+ 3776 D13.2.141   VBAR_EL2, Vector Base Address Register (EL2)
+ 3779 D13.2.142   VBAR_EL3, Vector Base Address Register (EL3)
+ 3781 D13.2.143   VMPIDR_EL2, Virtualization Multiprocessor ID Register
+ 3784 D13.2.144   VNCR_EL2, Virtual Nested Control Register
+ 3786 D13.2.145   VPIDR_EL2, Virtualization Processor ID Register
+ 3789 D13.2.146   VSTCR_EL2, Virtualization Secure Translation Control Register
+ 3794 D13.2.147   VSTTBR_EL2, Virtualization Secure Translation Table Base Register
+ 3797 D13.2.148   VTCR_EL2, Virtualization Translation Control Register
+ 3806 D13.2.149   VTTBR_EL2, Virtualization Translation Table Base Register
+ 3814 D13.3.2   DBGBCR<n>_EL1, n = 0 - 15
+ 3819 D13.3.3   DBGBVR<n>_EL1, n = 0 - 15
+ 3825 D13.3.4   DBGCLAIMCLR_EL1, Debug CLAIM Tag Clear register
+ 3828 D13.3.5   DBGCLAIMSET_EL1, Debug CLAIM Tag Set register
+ 3838 D13.3.9   DBGPRCR_EL1, Debug Power Control Register
+ 3841 D13.3.10   DBGVCR32_EL2, Debug Vector Catch Register
+ 3846 D13.3.11   DBGWCR<n>_EL1, n = 0 - 15
+ 3851 D13.3.12   DBGWVR<n>_EL1, n = 0 - 15
+ 3869 D13.3.17   MDCR_EL2, Monitor Debug Configuration Register (EL2)
+ 3881 D13.3.18   MDCR_EL3, Monitor Debug Configuration Register (EL3)
+ 3895 D13.3.20   MDSCR_EL1, Monitor Debug System Control Register
+ 3901 D13.3.21   OSDLR_EL1, OS Double Lock Register
+ 3910 D13.3.24   OSECCR_EL1, OS Lock Exception Catch Control Register
+ 3913 D13.3.25   OSLAR_EL1, OS Lock Access Register
+ 3917 D13.3.27   SDER32_EL2, AArch32 Secure Debug Enable Register
+ 3919 D13.3.28   SDER32_EL3, AArch32 Secure Debug Enable Register
+ 3921 D13.3.29   TRFCR_EL1, Trace Filter Control Register (EL1)
+ 3921 D13.3.29   TRFCR_EL12, Trace Filter Control Register (EL1)
+ 3925 D13.3.30   TRFCR_EL2, Trace Filter Control Register (EL2)
+ 3968 D13.4.10   PMINTENCLR_EL1, Performance M onitors Interrupt Enable Clear register
+ 3971 D13.4.11   PMINTENSET_EL1, Performance Monitors Interrupt Enable Set register
+ 3989 D13.4.17   PMUSERENR_EL0, Performance Monitors User Enable Register
+ 4030 D13.5.11   AMEVCNTVOFF0<n>_EL2, n = 0 - 15
+ 4032 D13.5.12   AMEVCNTVOFF1<n>_EL2, n = 0 - 15
+ 4039 D13.5.15   AMUSERENR_EL0, Activity Monitors User Enable Register
+ 4045 D13.6.2   PMBLIMITR_EL1, Profiling Buffer Limit Address Register
+ 4048 D13.6.3   PMBPTR_EL1, Profiling Buffer Write Pointer Register
+ 4050 D13.6.4   PMBSR_EL1, Profiling Buffer Status/syndrome Register
+ 4056 D13.6.5   PMSCR_EL1, Statistical Profiling Control Register (EL1)
+ 4056 D13.6.5   PMSCR_EL12, Statistical Profiling Control Register (EL1)
+ 4061 D13.6.6   PMSCR_EL2, Statistical Profiling Control Register (EL2)
+ 4066 D13.6.7   PMSEVFR_EL1, Sampling Event Filter Register
+ 4071 D13.6.8   PMSFCR_EL1, Sampling Filter Control Register
+ 4075 D13.6.9   PMSICR_EL1, Sampling Interval Counter Register
+ 4081 D13.6.11   PMSIRR_EL1, Sampling Interval Reload Register
+ 4084 D13.6.12   PMSLATFR_EL1, Sampling Latency Filter Register
+ 4086 D13.6.13   PMSNEVFR_EL1, Sampling Inverted Event Filter Register
+ 4092 D13.7.1   DISR_EL1, Deferred Interrupt Status Register
+ 4097 D13.7.3   ERRSELR_EL1, Error Record Select Register
+ 4100 D13.7.4   ERXADDR_EL1, Selected Error Record Address Register
+ 4103 D13.7.5   ERXCTLR_EL1, Selected Error Record Control Register
+ 4108 D13.7.7   ERXMISC0_EL1, Selected Error Record Miscellaneous Register 0
+ 4111 D13.7.8   ERXMISC1_EL1, Selected Error Record Miscellaneous Register 1
+ 4114 D13.7.9   ERXMISC2_EL1, Selected Error Record Miscellaneous Register 2
+ 4117 D13.7.10   ERXMISC3_EL1, Selected Error Record Miscellaneous Register 3
+ 4120 D13.7.11   ERXPFGCDN_EL1, Selected Pseudo-fault Generation Countdown register
+ 4123 D13.7.12   ERXPFGCTL_EL1, Selected Pseudo-fault Generation Control register
+ 4128 D13.7.14   ERXSTATUS_EL1, Selected Error Record Primary Status Register
+ 4131 D13.7.15   VDISR_EL2, Virtual Deferred Interrupt Status Register
+ 4136 D13.7.16   VSESR_EL2, Virtual SError Exception Syndrome Register
+ 4142 D13.8.2   CNTHCTL_EL2, Counter-timer Hypervisor Control register
+ 4153 D13.8.3   CNTHP_CTL_EL2, Counter-timer Hypervisor Physical Timer Control register
+ 4157 D13.8.4   CNTHP_CVAL_EL2, Counter-timer Physical Timer CompareValue register (EL2)
+ 4161 D13.8.5   CNTHP_TVAL_EL2, Counter-timer Ph ysical Timer TimerValue register (EL2)
+ 4164 D13.8.6   CNTHPS_CTL_EL2, Counter-timer Secure Physical Timer Control register (EL2)
+ 4168 D13.8.7   CNTHPS_CVAL_EL2, Counter-timer Secure Physical Timer CompareValue register (EL2)
+ 4172 D13.8.8   CNTHPS_TVAL_EL2, Counter-timer Secure  Physical Timer TimerValue register (EL2)
+ 4176 D13.8.9   CNTHV_CTL_EL2, Counter-timer Virtual Timer Control register (EL2)
+ 4180 D13.8.10   CNTHV_CVAL_EL2, Counter-timer Vi rtual Timer CompareValue register (EL2)
+ 4183 D13.8.11   CNTHV_TVAL_EL2, Counter-timer Virtual Timer TimerValue Register (EL2)
+ 4186 D13.8.12   CNTHVS_CTL_EL2, Counter-timer Secure Virtual Timer Control register (EL2)
+ 4190 D13.8.13   CNTHVS_CVAL_EL2, Counter-timer Secure Virtual Timer CompareValue register (EL2)
+ 4193 D13.8.14   CNTHVS_TVAL_EL2, Counter-timer Secu re Virtual Timer TimerValue register (EL2)
+ 4197 D13.8.15   CNTKCTL_EL1, Counter-timer Kernel Control register
+ 4197 D13.8.15   CNTKCTL_EL12, Counter-timer Kernel Control register
+ 4202 D13.8.16   CNTP_CTL_EL02, Counter-timer Physical Timer Control register
+ 4206 D13.8.17   CNTP_CVAL_EL02, Counter-timer Physical Timer CompareValue register
+ 4210 D13.8.18   CNTP_TVAL_EL02, Counter-timer Physical Timer TimerValue register
+ 4218 D13.8.21   CNTPS_CTL_EL1, Counter-time r Physical Secure Timer Control register
+ 4221 D13.8.22   CNTPOFF_EL2, Counter-timer Physical Offset register
+ 4223 D13.8.23   CNTPS_CVAL_EL1, Counter-timer Physical Secure Timer CompareValue register
+ 4225 D13.8.24   CNTPS_TVAL_EL1, Counter-timer Physical Secure Timer TimerValue register
+ 4227 D13.8.25   CNTV_CTL_EL02, Counter-timer Virtual Timer Control register
+ 4231 D13.8.26   CNTV_CVAL_EL02, Counter-timer Virtual Timer CompareValue register
+ 4235 D13.8.27   CNTV_TVAL_EL02, Counter-timer Virtual Timer TimerValue register
+ 4243 D13.8.30   CNTVOFF_EL2, Counter-timer Virtual Offset register

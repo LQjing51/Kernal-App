@@ -1,0 +1,161 @@
+/*BTI指令的operation中有各类其它的指令的情况，只考虑BTI的systemhintOp，对应的是SetBTyteNext('00'),没有调用为实现函数*/
+942  C6.2.39   BTI 
+ ProfilingSynchronizationBarrier(
+ Hint_DGH(
+ Hint_Yield(
+ SendEvent(
+ SynchronizeErrors(
+ TakeUnmaskedSErrorInterrupts(
+ TraceSynchronizationBarrier(
+ AArch64.ESBOperation(
+ Hint_WFE(
+ Hint_WFI(
+
+/*Hint_DGH未实现，DGH指令因为DGH未开启，condition-equal*/
+1012  C6.2.79   DGH
+ Hint_DGH(
+
+/*待定，调用的未实现函数是否EL无关待定*/
+1028  C6.2.89   ESB
+ SynchronizeErrors(
+ TakeUnmaskedSErrorInterrupts(
+ AArch64.ESBOperation(
+
+/*DGH, PSB, TSB对应的extension未开启，condition-equal*/
+/*WFI/WFIT指令EL0 undefine，不会执行该指令，忽略其调用未实现函数的情况*/
+/*其余待定*/
+1032  C6.2.92   HINT
+ ProfilingSynchronizationBarrier( //PSB
+ Hint_DGH( //DGH
+ Hint_Yield( //待定
+ SendEvent( //待定
+ SynchronizeErrors( //待定
+ TakeUnmaskedSErrorInterrupts( //待定
+ TraceSynchronizationBarrier( //TSB
+ AArch64.ESBOperation( //待定
+ Hint_WFE( //待定
+ Hint_WFI( //调用它的指令WFI, WFIT均为conditional-undefine，不用管它
+
+/*HLT EL0 undefine，不会执行该指令，忽略其调用未实现函数的情况*/
+1034  C6.2.93   HLT
+ Halt(
+
+/*HVC EL0 undefine，不会执行该指令，忽略其调用未实现函数的情况*/
+1035  C6.2.94   HVC
+ AArch64.CallHypervisor(
+
+/*Feat_LS64未开启，condition-equal*/
+1040  C6.2.98   LD64B
+ 
+ MemLoad64B(
+ CheckLDST64BEnabled(
+ 
+/*待定*/
+1236  C6.2.194   MRS
+ AArch64.SysRegRead(
+
+
+/*PSB 对应的extension未开启，condition-equal*/
+1278  C6.2.217   PSB CSYNC
+ ProfilingSynchronizationBarrier(
+
+
+/*待定*/
+1312  C6.2.238   SEV
+ SendEvent(
+
+/*SMC EL0 undefine，不会执行该指令，忽略其调用未实现函数的情况*/
+1316  C6.2.241   SMC
+ AArch64.CallSecureMonitor(
+ AArch64.CheckForSMCUndefOrTrap(
+
+/*Feat_LS64未开启，condition-equal*/
+1325  C6.2.248   ST64B
+ 
+ MemStore64B(
+ CheckLDST64BEnabled(
+ 
+/*Feat_LS64未开启，condition-equal*/
+1326  C6.2.249   ST64BV
+ 
+ MemStore64BWithRet(
+ CheckST64BVEnabled(
+ 
+/*Feat_LS64未开启，condition-equal*/
+1328  C6.2.250   ST64BV0
+ 
+ MemStore64BWithRet(
+ CheckST64BV0Enabled(
+ 
+
+/*待定*/
+1368  C6.2.272   STLXP
+ 
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ 
+ 
+/*待定*/
+1371  C6.2.273   STLXR
+ 
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ 
+ 
+/*待定*/
+1374  C6.2.274   STLXRB
+ 
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ 
+ 
+/*待定*/
+1376  C6.2.275   STLXRH
+ 
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ 
+/*待定*/
+1438  C6.2.305   STXP
+ 
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ 
+ 
+/*待定*/
+1441  C6.2.306   STXR
+ 
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ 
+ 
+/*待定*/
+1443  C6.2.307   STXRB
+ 
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ 
+ 
+/*待定*/
+1445  C6.2.308   STXRH
+ 
+ ExclusiveMonitorsStatus(
+ AArch64.ExclusiveMonitorsPass(
+ 
+/*SVC supervisor call 到 EL1，没有EL1，认为该指令undefine*/
+1470  C6.2.321   SVC
+ AArch64.CallSupervisor(
+ AArch64.CheckForSVCTrap(
+
+
+/*待定*/
+1484  C6.2.329   SYSL
+ AArch64.SysInstrWithResult(
+
+/*TSB 对应的extension未开启，condition undefine*/
+1490  C6.2.333   TSB CSYNC
+ TraceSynchronizationBarrier(
+
+/*待定*/
+1519  C6.2.354   YIELD
+ Hint_Yield(

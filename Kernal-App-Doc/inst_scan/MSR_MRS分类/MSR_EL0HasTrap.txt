@@ -1,0 +1,25 @@
+ 411 C5.2.2   DAIF, Interrupt Mask Bits
+ 426 C5.2.7   FPCR, Floating-point Control Register
+ 434 C5.2.8   FPSR, Floating-point Status Register
+ 3671 D13.2.119   SCXTNUM_EL0, EL0 Read/Write Software Context Number
+ 3741 D13.2.130   TPIDR_EL0, EL0 Read/Write Software Thread ID Register
+ 3831 D13.3.6   DBGDTR_EL0, half-duplex
+ 3930 D13.4.1   PMCCFILTR_EL0, Performance M onitors Cycle Count Filter Register
+ 3935 D13.4.2   PMCCNTR_EL0, Performance Monitors Cycle Count Register
+ 3944 D13.4.5   PMCNTENCLR_EL0, Performance Monitors Count Enable Clear register
+ 3947 D13.4.6   PMCNTENSET_EL0, Performance Monitors Count Enable Set register
+ 3950 D13.4.7   PMCR_EL0, Performance Monitors Control Register
+ 3958 D13.4.8   PMEVCNTR<n>_EL0, n = 0 - 30
+ 3962 D13.4.9   PMEVTYPER<n>_EL0, n = 0 - 30
+ 3976 D13.4.13   PMOVSCLR_EL0, Performance Monito rs Overflow Flag Status Clear Register
+ 3980 D13.4.14   PMOVSSET_EL0, Performance Monitors Overflow Flag Status Set register
+ 3984 D13.4.15   PMSELR_EL0, Performance Monitors Event Counter Selection Register
+ 3987 D13.4.16   PMSWINC_EL0, Performance Monitors Software Increment register
+ 3993 D13.4.18   PMXEVCNTR_EL0, Performance M onitors Selected Event Count Register
+ 3997 D13.4.19   PMXEVTYPER_EL0, Performance Mo nitors Selected Event Type Register
+ 4202 D13.8.16   CNTP_CTL_EL0, Counter-timer Physical Timer Control register
+ 4206 D13.8.17   CNTP_CVAL_EL0, Counter-timer Physical Timer CompareValue register
+ 4210 D13.8.18   CNTP_TVAL_EL0, Counter-timer Physical Timer TimerValue register
+ 4227 D13.8.25   CNTV_CTL_EL0, Counter-timer Virtual Timer Control register
+ 4231 D13.8.26   CNTV_CVAL_EL0, Counter-timer Virtual Timer CompareValue register
+ 4235 D13.8.27   CNTV_TVAL_EL0, Counter-timer Virtual Timer TimerValue register

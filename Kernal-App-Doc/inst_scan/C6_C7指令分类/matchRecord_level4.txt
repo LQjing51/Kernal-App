@@ -1,0 +1,22 @@
+aarch64/exceptions/traps/AArch64.CheckFPAdvSIMDEnabled
+ AArch64.CheckFPEnabled(
+
+aarch64/exceptions/traps/CheckFPEnabled64
+ AArch64.CheckFPEnabled(
+
+aarch64/functions/memory/AArch64.CheckAlignment
+ AArch64.Abort(
+
+aarch64/functions/memory/CheckSingleAccessAttributes
+ AArch64.Abort(
+
+aarch64/instrs/system/sysops/ic/AArch64.IC
+ AArch64.Abort(
+
+aarch64/translation/vmsa_translation/AArch64.FullTranslate
+ AArch64.S1Translate(
+ AArch64.S2Translate(
+
+aarch64/translation/vmsa_translation/AArch64.TranslateAddress
+ AArch64.CheckDebug(
+

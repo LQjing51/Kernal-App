@@ -1,0 +1,152 @@
+507 C5.3.1   DC CGDSW Clean of Data and Allocation Tags by Set/Way
+515 C5.3.5   DC CGSW Clean of Allocation Tags by Set/Way
+523 C5.3.9   DC CIGDSW Clean and Invalidate of Data and Allocation Tags by Set/Way
+527 C5.3.11   DC CIGSW Clean and Invalidate of Allocation Tags by Set/Way
+531 C5.3.13   DC CISW Data or unified Cache line Clean and Invalidate by Set/Way
+535 C5.3.15   DC CSW Data or unified Cache line Clean by Set/Way
+549 C5.3.22   DC IGDSW Invalidate of Data and Allocation Tags by Set/Way
+551 C5.3.23   DC IGDVAC Invalidate of Data and Allocation Tags by VA to PoC
+553 C5.3.24   DC IGSW Invalidate of Allocation Tags by Set/Way
+555 C5.3.25   DC IGVAC Invalidate of Allocation Tags by VA to PoC
+557 C5.3.26   DC ISW Data or unified Cache line Invalidate by Set/Way
+559 C5.3.27   DC IVAC Data or unified Cache line Invalidate by VA to PoC
+563 C5.3.29   IC IALLU Instruction Cache Invalidate All to PoU
+564 C5.3.30   IC IALLUIS Instruction Cache Invalidate All to PoU, Inner Shareable
+568 C5.4.1   AT S12E0R Address Translate Stages 1 and 2 EL0 Read
+570 C5.4.2   AT S12E0W Address Translate Stages 1 and 2 EL0 Write
+572 C5.4.3   AT S12E1R Address Translate Stages 1 and 2 EL1 Read
+574 C5.4.4   AT S12E1W Address Translate Stages 1 and 2 EL1 Write
+576 C5.4.5   AT S1E0R Address Translate Stage 1 EL0 Read
+578 C5.4.6   AT S1E0W Address Translate Stage 1 EL0 Write
+580 C5.4.7   AT S1E1R Address Translate Stage 1 EL1 Read
+582 C5.4.8   AT S1E1RP Address Translate Stage 1 EL1 Read PAN
+584 C5.4.9   AT S1E1W Address Translate Stage 1 EL1 Write
+586 C5.4.10   AT S1E1WP Address Translate Stage 1 EL1 Write PAN
+588 C5.4.11   AT S1E2R Address Translate Stage 1 EL2 Read
+589 C5.4.12   AT S1E2W Address Translate Stage 1 EL2 Write
+593 C5.5.1   TLBI ALLE1 TLB Invalidate All, EL1
+593 C5.5.1   TLBI ALLE1NXS TLB Invalidate All, EL1
+595 C5.5.2   TLBI ALLE1IS TLB Invalidate All, EL1, Inner Shareable
+595 C5.5.2   TLBI ALLE1ISNXS TLB Invalidate All, EL1, Inner Shareable
+597 C5.5.3   TLBI ALLE1OS TL B Invalidate All, EL1, Outer Shareable
+597 C5.5.3   TLBI ALLE1OSNXS TL B Invalidate All, EL1, Outer Shareable
+599 C5.5.4   TLBI ALLE2 TLB Invalidate All, EL2
+599 C5.5.4   TLBI ALLE2NXS TLB Invalidate All, EL2
+601 C5.5.5   TLBI ALLE2IS TLB Invalidate All, EL2, Inner Shareable
+601 C5.5.5   TLBI ALLE2ISNXS TLB Invalidate All, EL2, Inner Shareable
+603 C5.5.6   TLBI ALLE2OS TL B Invalidate All, EL2, Outer Shareable
+603 C5.5.6   TLBI ALLE2OSNXS TL B Invalidate All, EL2, Outer Shareable
+611 C5.5.10   TLBI ASIDE1 TLB Invalidate by ASID, EL1
+611 C5.5.10   TLBI ASIDE1NXS TLB Invalidate by ASID, EL1
+614 C5.5.11   TLBI ASIDE1IS TLB Invalidate by ASID, EL1, Inner Shareable
+614 C5.5.11   TLBI ASIDE1ISNXS TLB Invalidate by ASID, EL1, Inner Shareable
+617 C5.5.12   TLBI ASIDE1OS TLB  Invalidate by ASID, EL1, Outer Shareable
+617 C5.5.12   TLBI ASIDE1OSNXS TLB  Invalidate by ASID, EL1, Outer Shareable
+620 C5.5.13   TLBI IPAS2E1 TLB Invalida te by Intermediate Physical Address, Stage 2, EL1
+620 C5.5.13   TLBI IPAS2E1NXS TLB Invalida te by Intermediate Physical Address, Stage 2, EL1
+623 C5.5.14   TLBI IPAS2E1IS TLB  Invalidate by Intermediate Physical Address, Stage 2, EL1, Inner Shareable
+623 C5.5.14   TLBI IPAS2E1ISNXS TLB  Invalidate by Intermediate Physical Address, Stage 2, EL1, Inner Shareable
+626 C5.5.15   TLBI IPAS2E1OS TLB Invalidate by Intermediate Physical Address, Stage 2, EL1, Outer Shareable
+626 C5.5.15   TLBI IPAS2E1OSNXS TLB Invalidate by Intermediate Physical Address, Stage 2, EL1, Outer Shareable
+629 C5.5.16   TLBI IPAS2LE1 TLB Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1
+629 C5.5.16   TLBI IPAS2LE1NXS TLB Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1
+632 C5.5.17   TLBI IPAS2LE1IS TLB Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1, Inner Shareable
+632 C5.5.17   TLBI IPAS2LE1ISNXS TLB Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1, Inner Shareable
+636 C5.5.18   TLBI IPAS2LE1OS TLB  Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1, Outer Shareable
+636 C5.5.18   TLBI IPAS2LE1OSNXS TLB  Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1, Outer Shareable
+639 C5.5.19   TLBI RIPAS2E1 TL B Range Invalidate by Intermediate Physical Address, Stage 2, EL1
+639 C5.5.19   TLBI RIPAS2E1NXS TL B Range Invalidate by Intermediate Physical Address, Stage 2, EL1
+643 C5.5.20   TLBI RIPAS2E1IS  TLB Range Invalidate by Intermediate Physical Address, Stage 2, EL1, Inner Shareable
+643 C5.5.20   TLBI RIPAS2E1ISNXS  TLB Range Invalidate by Intermediate Physical Address, Stage 2, EL1, Inner Shareable
+647 C5.5.21   TLBI RIPAS2E1OS TLB Range Invalidate by Intermediate Physical Address, Stage 2, EL1, Outer Shareable
+647 C5.5.21   TLBI RIPAS2E1OSNXS TLB Range Invalidate by Intermediate Physical Address, Stage 2, EL1, Outer Shareable
+651 C5.5.22   TLBI RIPAS2LE1 TLB Range Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1
+651 C5.5.22   TLBI RIPAS2LE1NXS TLB Range Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1
+655 C5.5.23   TLBI RIPAS2LE1IS TLB Range Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1, Inner Shareable
+655 C5.5.23   TLBI RIPAS2LE1ISNXS TLB Range Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1, Inner Shareable
+659 C5.5.24   TLBI RIPAS2LE1OS TLB Range Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1, Outer Shareable
+659 C5.5.24   TLBI RIPAS2LE1OSNXS TLB Range Invalidate by Intermediate Physical Address, Stage 2, Last level, EL1, Outer Shareable
+663 C5.5.25   TLBI RVAAE1 TLB Range Invalidate by VA, All ASID, EL1
+663 C5.5.25   TLBI RVAAE1NXS TLB Range Invalidate by VA, All ASID, EL1
+667 C5.5.26   TLBI RVAAE1IS TLB Range Invalidate by VA, All ASID, EL1, Inner Shareable
+667 C5.5.26   TLBI RVAAE1ISNXS TLB Range Invalidate by VA, All ASID, EL1, Inner Shareable
+671 C5.5.27   TLBI RVAAE1OS TLB Ra nge Invalidate by VA, All ASID, EL1, Outer Shareable
+671 C5.5.27   TLBI RVAAE1OSNXS TLB Ra nge Invalidate by VA, All ASID, EL1, Outer Shareable
+675 C5.5.28   TLBI RVAALE1 TLB Range Invalidate by VA, All ASID, Last level, EL1
+675 C5.5.28   TLBI RVAALE1NXS TLB Range Invalidate by VA, All ASID, Last level, EL1
+679 C5.5.29   TLBI RVAALE1IS TLB Range Invalidate by VA, All ASID, Last Level, EL1, Inner Shareable
+679 C5.5.29   TLBI RVAALE1ISNXS TLB Range Invalidate by VA, All ASID, Last Level, EL1, Inner Shareable
+683 C5.5.30   TLBI RVAALE1OS TLB Range Invalidate by VA, All ASID, Last Level, EL1, Outer Shareable
+683 C5.5.30   TLBI RVAALE1OSNXS TLB Range Invalidate by VA, All ASID, Last Level, EL1, Outer Shareable
+687 C5.5.31   TLBI RVAE1 TLB Range Invalidate by VA, EL1
+687 C5.5.31   TLBI RVAE1NXS TLB Range Invalidate by VA, EL1
+691 C5.5.32   TLBI RVAE1IS TLB Range Invalidate by VA, EL1, Inner Shareable
+691 C5.5.32   TLBI RVAE1ISNXS TLB Range Invalidate by VA, EL1, Inner Shareable
+695 C5.5.33   TLBI RVAE1OS TLB Ra nge Invalidate by VA, EL1, Outer Shareable
+695 C5.5.33   TLBI RVAE1OSNXS TLB Ra nge Invalidate by VA, EL1, Outer Shareable
+699 C5.5.34   TLBI RVAE2 TLB Range Invalidate by VA, EL2
+699 C5.5.34   TLBI RVAE2NXS TLB Range Invalidate by VA, EL2
+703 C5.5.35   TLBI RVAE2IS TLB Range Invalidate by VA, EL2, Inner Shareable
+703 C5.5.35   TLBI RVAE2ISNXS TLB Range Invalidate by VA, EL2, Inner Shareable
+707 C5.5.36   TLBI RVAE2OS TLB Ra nge Invalidate by VA, EL2, Outer Shareable
+707 C5.5.36   TLBI RVAE2OSNXS TLB Ra nge Invalidate by VA, EL2, Outer Shareable
+720 C5.5.40   TLBI RVALE1 TLB Ra nge Invalidate by VA, Last level, EL1
+720 C5.5.40   TLBI RVALE1NXS TLB Ra nge Invalidate by VA, Last level, EL1
+724 C5.5.41   TLBI RVALE1IS TLB Ra nge Invalidate by VA, Last level, EL1, Inner Shareable
+724 C5.5.41   TLBI RVALE1ISNXS TLB Ra nge Invalidate by VA, Last level, EL1, Inner Shareable
+728 C5.5.42   TLBI RVALE1OS TLB Ra nge Invalidate by VA, Last level, EL1, Outer Shareable
+728 C5.5.42   TLBI RVALE1OSNXS TLB Ra nge Invalidate by VA, Last level, EL1, Outer Shareable
+732 C5.5.43   TLBI RVALE2 TLB Ra nge Invalidate by VA, Last level, EL2
+732 C5.5.43   TLBI RVALE2NXS TLB Ra nge Invalidate by VA, Last level, EL2
+736 C5.5.44   TLBI RVALE2IS TLB Ra nge Invalidate by VA, Last level, EL2, Inner Shareable
+736 C5.5.44   TLBI RVALE2ISNXS TLB Ra nge Invalidate by VA, Last level, EL2, Inner Shareable
+740 C5.5.45   TLBI RVALE2OS TLB Ra nge Invalidate by VA, Last level, EL2, Outer Shareable
+740 C5.5.45   TLBI RVALE2OSNXS TLB Ra nge Invalidate by VA, Last level, EL2, Outer Shareable
+753 C5.5.49   TLBI VAAE1 TL B Invalidate by VA, All ASID, EL1
+753 C5.5.49   TLBI VAAE1NXS TL B Invalidate by VA, All ASID, EL1
+757 C5.5.50   TLBI VAAE1IS TLB In validate by VA, All ASID, EL1, Inner Shareable
+757 C5.5.50   TLBI VAAE1ISNXS TLB In validate by VA, All ASID, EL1, Inner Shareable
+761 C5.5.51   TLBI VAAE1OS TLB In validate by VA, All ASID, EL1, Outer Shareable
+761 C5.5.51   TLBI VAAE1OSNXS TLB In validate by VA, All ASID, EL1, Outer Shareable
+765 C5.5.52   TLBI VAALE1 TLB In validate by VA, All ASID, Last level, EL1
+765 C5.5.52   TLBI VAALE1NXS TLB In validate by VA, All ASID, Last level, EL1
+769 C5.5.53   TLBI VAALE1IS TLB Inva lidate by VA, All ASID, Last Level, EL1, Inner Shareable
+769 C5.5.53   TLBI VAALE1ISNXS TLB Inva lidate by VA, All ASID, Last Level, EL1, Inner Shareable
+773 C5.5.54   TLBI VAALE1OS TLB Inva lidate by VA, All ASID, Last Level, EL1, Outer Shareable
+773 C5.5.54   TLBI VAALE1OSNXS TLB Inva lidate by VA, All ASID, Last Level, EL1, Outer Shareable
+777 C5.5.55   TLBI VAE1 TLB Invalidate by VA, EL1
+777 C5.5.55   TLBI VAE1NXS TLB Invalidate by VA, EL1
+781 C5.5.56   TLBI VAE1IS TLB  Invalidate by VA, EL1, Inner Shareable
+781 C5.5.56   TLBI VAE1ISNXS TLB  Invalidate by VA, EL1, Inner Shareable
+785 C5.5.57   TLBI VAE1OS TLB Invalidate by VA, EL1, Outer Shareable
+785 C5.5.57   TLBI VAE1OSNXS TLB Invalidate by VA, EL1, Outer Shareable
+789 C5.5.58   TLBI VAE2 TLB Invalidate by VA, EL2
+789 C5.5.58   TLBI VAE2NXS TLB Invalidate by VA, EL2
+793 C5.5.59   TLBI VAE2IS TLB  Invalidate by VA, EL2, Inner Shareable
+793 C5.5.59   TLBI VAE2ISNXS TLB  Invalidate by VA, EL2, Inner Shareable
+797 C5.5.60   TLBI VAE2OS TLB Invalidate by VA, EL2, Outer Shareable
+797 C5.5.60   TLBI VAE2OSNXS TLB Invalidate by VA, EL2, Outer Shareable
+810 C5.5.64   TLBI VALE1 TL B Invalidate by VA, Last level, EL1
+810 C5.5.64   TLBI VALE1NXS TL B Invalidate by VA, Last level, EL1
+814 C5.5.65   TLBI VALE1IS TLB Invali date by VA, Last level, EL1, Inner Shareable
+814 C5.5.65   TLBI VALE1ISNXS TLB Invali date by VA, Last level, EL1, Inner Shareable
+818 C5.5.66   TLBI VALE1OS TLB Inva lidate by VA, Last level, EL1, Outer Shareable
+818 C5.5.66   TLBI VALE1OSNXS TLB Inva lidate by VA, Last level, EL1, Outer Shareable
+822 C5.5.67   TLBI VALE2 TL B Invalidate by VA, Last level, EL2
+822 C5.5.67   TLBI VALE2NXS TL B Invalidate by VA, Last level, EL2
+826 C5.5.68   TLBI VALE2IS TLB Invali date by VA, Last level, EL2, Inner Shareable
+826 C5.5.68   TLBI VALE2ISNXS TLB Invali date by VA, Last level, EL2, Inner Shareable
+830 C5.5.69   TLBI VALE2OS TLB Inva lidate by VA, Last level, EL2, Outer Shareable
+830 C5.5.69   TLBI VALE2OSNXS TLB Inva lidate by VA, Last level, EL2, Outer Shareable
+843 C5.5.73   TLBI VMALLE1 TLB Invalidate by VMID, All at stage 1, EL1
+843 C5.5.73   TLBI VMALLE1NXS TLB Invalidate by VMID, All at stage 1, EL1
+846 C5.5.74   TLBI VMALLE1IS TLB In validate by VMID, All at stage 1, EL1, Inner Shareable
+846 C5.5.74   TLBI VMALLE1ISNXS TLB In validate by VMID, All at stage 1, EL1, Inner Shareable
+849 C5.5.75   TLBI VMALLE1OS TLB In validate by VMID, All at stage 1, EL1, Outer Shareable
+849 C5.5.75   TLBI VMALLE1OSNXS TLB In validate by VMID, All at stage 1, EL1, Outer Shareable
+852 C5.5.76   TLBI VMALLS12E1 TLB Invalidate by VMID, All at Stage 1 and 2, EL1
+852 C5.5.76   TLBI VMALLS12E1NXS TLB Invalidate by VMID, All at Stage 1 and 2, EL1
+854 C5.5.77   TLBI VMALLS12E1IS TLB Invalidate by VMID, All at Stage 1 and 2, EL1, Inner Shareable
+854 C5.5.77   TLBI VMALLS12E1ISNXS TLB Invalidate by VMID, All at Stage 1 and 2, EL1, Inner Shareable
+857 C5.5.78   TLBI VMALLS12E1OS TLB Invalidate by VMID, All at Stage 1 and 2, EL1, Outer Shareable
+857 C5.5.78   TLBI VMALLS12E1OSNXS TLB Invalidate by VMID, All at Stage 1 and 2, EL1, Outer Shareable

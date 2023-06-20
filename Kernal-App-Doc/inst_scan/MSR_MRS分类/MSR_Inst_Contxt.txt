@@ -1,0 +1,7 @@
+409 C5.2.1   CurrentEL, Current Exception Level
+if PSTATE.EL == EL0 then    UNDEFINED;elsif PSTATE.EL == EL1 then    if EL2Enabled() && HCR_EL2.NV == '1' thenRES063 32
+RES031 4
+EL32
+RES010
+op0 op1 CRn CRm op20b11 0b000 0b0100 0b0010 0b010The A64 System Instruction Class C5.2 Special-purpose registers
+C5-410Copyright © 2013-2021 Arm Limited or its affiliates. All rights reserved. ARM DDI 0487G.b Non-Confidential ID072021        return Zeros(60):'10':Zeros(2);    else        return Zeros(60):PSTATE.EL:Zeros(2);elsif PSTATE.EL == EL2 then    return Zeros(60):PSTATE.EL:Zeros(2);

@@ -1,0 +1,84 @@
+ 411 C5.2.2   DAIF, Interrupt Mask Bits
+Undefine
+True
+True
+ 426 C5.2.7   FPCR, Floating-point Control Registern
+True
+True
+True
+ 434 C5.2.8   FPSR, Floating-point Status Register
+True
+True
+True
+3606 D13.2.114 S3_<op1>_<Cn>_<Cm>_<op2>, IMPLEMENTATION DEFINED registers
+True
+True
+True
+ 3671 D13.2.119   SCXTNUM_EL0, EL0 Read/Write Software Context Number
+Undefine
+Undefine
+True
+ 3741 D13.2.130   TPIDR_EL0, EL0 Read/Write Software Thread ID Register
+True
+True
+True
+ 3831 D13.3.6   DBGDTR_EL0, half-duplex
+Undefine
+True
+True
+3836 D13.3.8 DBGDTRTX_EL0, Debug Data Transfer Register, Transmit
+Undefine
+True
+True
+  3930 D13.4.1   PMCCFILTR_EL0, Performance M onitors Cycle Count Filter Register
+True
+True
+True
+ 3935 D13.4.2   PMCCNTR_EL0, Performance Monitors Cycle Count Register
+True
+True
+True
+ 3944 D13.4.5   PMCNTENCLR_EL0, Performance Monitors Count Enable Clear register
+True
+True
+True
+ 3947 D13.4.6   PMCNTENSET_EL0, Performance Monitors Count Enable Set register
+True
+True
+True
+ 3950 D13.4.7   PMCR_EL0, Performance Monitors Control Register
+True
+True
+True
+ 3958 D13.4.8   PMEVCNTR<n>_EL0, n = 0 - 30
+True
+True
+True
+ 3962 D13.4.9   PMEVTYPER<n>_EL0, n = 0 - 30
+True
+True
+True
+ 3976 D13.4.13   PMOVSCLR_EL0, Performance Monito rs Overflow Flag Status Clear Register
+True
+True
+True
+ 3980 D13.4.14   PMOVSSET_EL0, Performance Monitors Overflow Flag Status Set register
+True
+True
+True
+ 3984 D13.4.15   PMSELR_EL0, Performance Monitors Event Counter Selection Register
+True
+True
+True
+ 3987 D13.4.16   PMSWINC_EL0, Performance Monitors Software Increment register
+True
+True
+True
+ 3993 D13.4.18   PMXEVCNTR_EL0, Performance M onitors Selected Event Count Register
+True
+True
+True
+3997 D13.4.19   PMXEVTYPER_EL0, Performance Mo nitors Selected Event Type Register
+True
+True
+True

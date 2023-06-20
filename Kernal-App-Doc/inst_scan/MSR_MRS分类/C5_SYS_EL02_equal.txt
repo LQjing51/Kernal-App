@@ -1,0 +1,32 @@
+590 C5.4.13   AT S1E3R Address Translate Stage 1 EL3 Read
+591 C5.4.14   AT S1E3W Address Translate Stage 1 EL3 Write
+605 C5.5.7   TLBI ALLE3 TLB Invalidate All, EL3
+605 C5.5.7   TLBI ALLE3NXS TLB Invalidate All, EL3
+607 C5.5.8   TLBI ALLE3IS TLB Invalidate All, EL3, Inner Shareable
+607 C5.5.8   TLBI ALLE3ISNXS TLB Invalidate All, EL3, Inner Shareable
+609 C5.5.9   TLBI ALLE3OS TL B Invalidate All, EL3, Outer Shareable
+609 C5.5.9   TLBI ALLE3OSNXS TL B Invalidate All, EL3, Outer Shareable
+711 C5.5.37   TLBI RVAE3 TLB Range Invalidate by VA, EL3
+711 C5.5.37   TLBI RVAE3NXS TLB Range Invalidate by VA, EL3
+714 C5.5.38   TLBI RVAE3IS TLB Range Invalidate by VA, EL3, Inner Shareable
+714 C5.5.38   TLBI RVAE3ISNXS TLB Range Invalidate by VA, EL3, Inner Shareable
+717 C5.5.39   TLBI RVAE3OS TLB Ra nge Invalidate by VA, EL3, Outer Shareable
+717 C5.5.39   TLBI RVAE3OSNXS TLB Ra nge Invalidate by VA, EL3, Outer Shareable
+744 C5.5.46   TLBI RVALE3 TLB Ra nge Invalidate by VA, Last level, EL3
+744 C5.5.46   TLBI RVALE3NXS TLB Ra nge Invalidate by VA, Last level, EL3
+747 C5.5.47   TLBI RVALE3IS TLB Ra nge Invalidate by VA, Last level, EL3, Inner Shareable
+747 C5.5.47   TLBI RVALE3ISNXS TLB Ra nge Invalidate by VA, Last level, EL3, Inner Shareable
+750 C5.5.48   TLBI RVALE3OS TLB Ra nge Invalidate by VA, Last level, EL3, Outer Shareable
+750 C5.5.48   TLBI RVALE3OSNXS TLB Ra nge Invalidate by VA, Last level, EL3, Outer Shareable
+801 C5.5.61   TLBI VAE3 TLB Invalidate by VA, EL3
+801 C5.5.61   TLBI VAE3NXS TLB Invalidate by VA, EL3
+804 C5.5.62   TLBI VAE3IS TLB  Invalidate by VA, EL3, Inner Shareable
+804 C5.5.62   TLBI VAE3ISNXS TLB  Invalidate by VA, EL3, Inner Shareable
+807 C5.5.63   TLBI VAE3OS TLB Invalidate by VA, EL3, Outer Shareable
+807 C5.5.63   TLBI VAE3OSNXS TLB Invalidate by VA, EL3, Outer Shareable
+834 C5.5.70   TLBI VALE3 TL B Invalidate by VA, Last level, EL3
+834 C5.5.70   TLBI VALE3NXS TL B Invalidate by VA, Last level, EL3
+837 C5.5.71   TLBI VALE3IS TLB Invali date by VA, Last level, EL3, Inner Shareable
+837 C5.5.71   TLBI VALE3ISNXS TLB Invali date by VA, Last level, EL3, Inner Shareable
+840 C5.5.72   TLBI VALE3OS TLB Inva lidate by VA, Last level, EL3, Outer Shareable
+840 C5.5.72   TLBI VALE3OSNXS TLB Inva lidate by VA, Last level, EL3, Outer Shareable

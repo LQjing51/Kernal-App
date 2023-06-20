@@ -1,0 +1,90 @@
+ 411 C5.2.2   DAIF, Interrupt Mask Bits
+ 426 C5.2.7   FPCR, Floating-point Control Register
+ 434 C5.2.8   FPSR, Floating-point Status Register
+ 3074 D13.2.11   AIDR_EL1, Auxiliary ID Register
+ 3103 D13.2.25   CCSIDR2_EL1, Current Cache Size ID Register 2
+ 3105 D13.2.26   CCSIDR_EL1, Current Cache Size ID Register
+ 3108 D13.2.27   CLIDR_EL1, Cache Level ID Register
+ 3138 D13.2.34   CTR_EL0, Cache Type Register
+ 3300 D13.2.45   GMID_EL1, Multiple tag transfer ID register
+ 3434 D13.2.57   ID_AA64AFR0_EL1, AArch64 Auxiliary Feature Register 0
+ 3436 D13.2.58   ID_AA64AFR1_EL1, AArch64 Auxiliary Feature Register 1
+ 3437 D13.2.59   ID_AA64DFR0_EL1, AArch64 Debug Feature Register 0
+ 3441 D13.2.60   ID_AA64DFR1_EL1, AArch64 Debug Feature Register 1
+ 3442 D13.2.61   ID_AA64ISAR0_EL1, AArch64 Instruction Set Attribute Register 0
+ 3446 D13.2.62   ID_AA64ISAR1_EL1, AArch64 Instruction Set Attribute Register 1
+ 3452 D13.2.63   ID_AA64ISAR2_EL1, AArch64 Instruction Set Attribute Register 2
+ 3454 D13.2.64   ID_AA64MMFR0_EL1, AArch64 Memory Model Feature Register 0
+ 3458 D13.2.65   ID_AA64MMFR1_EL1, AArch64 Memory Model Feature Register 1
+ 3462 D13.2.66   ID_AA64MMFR2_EL1, AArch64 Memory Model Feature Register 2
+ 3467 D13.2.67   ID_AA64PFR0_EL1, AArch64 Processor Feature Register 0
+ 3472 D13.2.68   ID_AA64PFR1_EL1, AArch64 Processor Feature Register 1
+ 3475 D13.2.69   ID_AFR0_EL1, AArch32 Auxiliary Feature Register 0
+ 3477 D13.2.70   ID_DFR0_EL1, AArch32 Debug Feature Register 0
+ 3481 D13.2.71   ID_DFR1_EL1, Debug Feature Register 1
+ 3483 D13.2.72   ID_ISAR0_EL1, AArch32 Instruction Set Attribute Register 0
+ 3486 D13.2.73   ID_ISAR1_EL1, AArch32 Instruction Set Attribute Register 1
+ 3489 D13.2.74   ID_ISAR2_EL1, AArch32 Instruction Set Attribute Register 2
+ 3492 D13.2.75   ID_ISAR3_EL1, AArch32 Instruction Set Attribute Register 3
+ 3495 D13.2.76   ID_ISAR4_EL1, AArch32 Instruction Set Attribute Register 4
+ 3498 D13.2.77   ID_ISAR5_EL1, AArch32 Instruction Set Attribute Register 5
+ 3501 D13.2.78   ID_ISAR6_EL1, AArch32 Instruction Set Attribute Register 6
+ 3504 D13.2.79   ID_MMFR0_EL1, AArch32 Memory Model Feature Register 0
+ 3507 D13.2.80   ID_MMFR1_EL1, AArch32 Memory Model Feature Register 1
+ 3511 D13.2.81   ID_MMFR2_EL1, AArch32 Memory Model Feature Register 2
+ 3515 D13.2.82   ID_MMFR3_EL1, AArch32 Memory Model Feature Register 3
+ 3519 D13.2.83   ID_MMFR4_EL1, AArch32 Memory Model Feature Register 4
+ 3523 D13.2.84   ID_MMFR5_EL1, AArch32 Memory Model Feature Register 5
+ 3525 D13.2.85   ID_PFR0_EL1, AArch32 Processor Feature Register 0
+ 3529 D13.2.86   ID_PFR1_EL1, AArch32 Processor Feature Register 1
+ 3533 D13.2.87   ID_PFR2_EL1, AArch32 Processor Feature Register 2
+ 3569 D13.2.98   MIDR_EL1, Main ID Register
+ 3572 D13.2.99   MPIDR_EL1, Multiprocessor Affinity Register
+ 3574 D13.2.100   MVFR0_EL1, AArch32 Media and VFP Feature Register 0
+ 3578 D13.2.101   MVFR1_EL1, AArch32 Media and VFP Feature Register 1
+ 3582 D13.2.102   MVFR2_EL1, AArch32 Media and VFP Feature Register 2
+ 3590 D13.2.104   REVIDR_EL1, Revision ID Register
+ 3671 D13.2.119   SCXTNUM_EL0, EL0 Read/Write Software Context Number
+ 3741 D13.2.130   TPIDR_EL0, EL0 Read/Write Software Thread ID Register
+ 3749 D13.2.134   TPIDRRO_EL0, EL0 Read-Only Software Thread ID Register
+ 3831 D13.3.6   DBGDTR_EL0, half-duplex
+ 3866 D13.3.16   MDCCSR_EL0, Monitor DCC Status Register
+ 3930 D13.4.1   PMCCFILTR_EL0, Performance M onitors Cycle Count Filter Register
+ 3935 D13.4.2   PMCCNTR_EL0, Performance Monitors Cycle Count Register
+ 3938 D13.4.3   PMCEID0_EL0, Performance Monitors Common Event Identification register 0
+ 3941 D13.4.4   PMCEID1_EL0, Performance Monitors Common Event Identification register 1
+ 3944 D13.4.5   PMCNTENCLR_EL0, Performance Monitors Count Enable Clear register
+ 3947 D13.4.6   PMCNTENSET_EL0, Performance Monitors Count Enable Set register
+ 3950 D13.4.7   PMCR_EL0, Performance Monitors Control Register
+ 3958 D13.4.8   PMEVCNTR<n>_EL0, n = 0 - 30
+ 3962 D13.4.9   PMEVTYPER<n>_EL0, n = 0 - 30
+ 3976 D13.4.13   PMOVSCLR_EL0, Performance Monito rs Overflow Flag Status Clear Register
+ 3980 D13.4.14   PMOVSSET_EL0, Performance Monitors Overflow Flag Status Set register
+ 3984 D13.4.15   PMSELR_EL0, Performance Monitors Event Counter Selection Register
+ 3989 D13.4.17   PMUSERENR_EL0, Performance Monitors User Enable Register
+ 3993 D13.4.18   PMXEVCNTR_EL0, Performance M onitors Selected Event Count Register
+ 3997 D13.4.19   PMXEVTYPER_EL0, Performance Mo nitors Selected Event Type Register
+ 4002 D13.5.1   AMCFGR_EL0, Activity Monitors Configuration Register
+ 4005 D13.5.2   AMCG1IDR_EL0, Activity Monitors Counter Group 1 Identification Register
+ 4007 D13.5.3   AMCGCR_EL0, Activity Monitors Counter Group Configuration Register
+ 4009 D13.5.4   AMCNTENCLR0_EL0, Activity Moni tors Count Enable Clear Register 0
+ 4012 D13.5.5   AMCNTENCLR1_EL0, Activity Moni tors Count Enable Clear Register 1
+ 4015 D13.5.6   AMCNTENSET0_EL0, Activity Monitors Count Enable Set Register 0
+ 4018 D13.5.7   AMCNTENSET1_EL0, Activity Monitors Count Enable Set Register 1
+ 4021 D13.5.8   AMCR_EL0, Activity Monitors Control Register
+ 4024 D13.5.9   AMEVCNTR0<n>_EL0, n = 0 - 3
+ 4027 D13.5.10   AMEVCNTR1<n>_EL0, n = 0 - 15
+ 4034 D13.5.13   AMEVTYPER0<n>_EL0, n = 0 - 3
+ 4036 D13.5.14   AMEVTYPER1<n>_EL0, n = 0 - 15
+ 4039 D13.5.15   AMUSERENR_EL0, Activity Monitors User Enable Register
+ 4140 D13.8.1   CNTFRQ_EL0, Counter-timer Frequency register
+ 4202 D13.8.16   CNTP_CTL_EL0, Counter-timer Physical Timer Control register
+ 4206 D13.8.17   CNTP_CVAL_EL0, Counter-timer Physical Timer CompareValue register
+ 4210 D13.8.18   CNTP_TVAL_EL0, Counter-timer Physical Timer TimerValue register
+ 4214 D13.8.19   CNTPCTSS_EL0, Counter-timer Self-Synchronized Physical Count register
+ 4216 D13.8.20   CNTPCT_EL0, Counter-timer Physical Count register
+ 4227 D13.8.25   CNTV_CTL_EL0, Counter-timer Virtual Timer Control register
+ 4231 D13.8.26   CNTV_CVAL_EL0, Counter-timer Virtual Timer CompareValue register
+ 4235 D13.8.27   CNTV_TVAL_EL0, Counter-timer Virtual Timer TimerValue register
+ 4239 D13.8.28   CNTVCTSS_EL0, Counter-timer Self-Synchronized Virtual Count register
+ 4241 D13.8.29   CNTVCT_EL0, Counter-timer Virtual Count register

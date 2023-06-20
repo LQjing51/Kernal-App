@@ -1,0 +1,129 @@
+aarch64/debug/breakpoint/AArch64.BreakpointMatch
+ AArch64.BreakpointValueMatch(
+ AArch64.BreakpointValueMatch(
+
+aarch64/debug/breakpoint/AArch64.StateMatch
+ AArch64.BreakpointValueMatch(
+
+aarch64/debug/watchpoint/AArch64.WatchpointMatch
+ AArch64.WatchpointByteMatch(
+
+aarch64/exceptions/aborts/AArch64.Abort
+ AArch64.DataAbort(
+ AArch64.InstructionAbort(
+ AArch64.BreakpointException(
+ AArch64.VectorCatchException(
+ AArch64.WatchpointException(
+
+aarch64/exceptions/aborts/AArch64.CheckPCAlignment
+ AArch64.PCAlignmentFault(
+
+aarch64/exceptions/aborts/AArch64.TagCheckFault
+ AArch64.RaiseTagCheckFault(
+ AArch64.RaiseTagCheckFault(
+
+aarch64/exceptions/traps/AArch64.CheckFPAdvSIMDTrap
+ AArch64.AdvSIMDFPAccessTrap(
+ AArch64.AdvSIMDFPAccessTrap(
+ AArch64.AdvSIMDFPAccessTrap(
+
+aarch64/exceptions/traps/AArch64.CheckFPEnabled
+ AArch64.AdvSIMDFPAccessTrap(
+
+aarch64/exceptions/traps/CheckLDST64BEnabled
+ LDST64BTrap(
+
+aarch64/exceptions/traps/CheckST64BV0Enabled
+ LDST64BTrap(
+
+aarch64/exceptions/traps/CheckST64BVEnabled
+ LDST64BTrap(
+
+aarch64/functions/cache/AArch64.DataMemZero
+ HandleExternalWriteAbort(
+
+aarch64/functions/memory/CheckSPAlignment
+ AArch64.SPAlignmentFault(
+
+aarch64/functions/memory/NVMem
+ Mem[
+ Mem[
+
+aarch64/functions/pac/addpac/AddPAC
+ CalculateBottomPACBit(
+
+aarch64/functions/pac/addpacda/AddPACDA
+ TrapPACUse(
+ TrapPACUse(
+
+aarch64/functions/pac/addpacdb/AddPACDB
+ TrapPACUse(
+ TrapPACUse(
+
+aarch64/functions/pac/addpacga/AddPACGA
+ TrapPACUse(
+ TrapPACUse(
+
+aarch64/functions/pac/addpacia/AddPACIA
+ TrapPACUse(
+ TrapPACUse(
+
+aarch64/functions/pac/addpacib/AddPACIB
+ TrapPACUse(
+ TrapPACUse(
+
+aarch64/functions/pac/auth/Auth
+ AArch64.PACFailException(
+ AArch64.PACFailException(
+ CalculateBottomPACBit(
+
+aarch64/functions/pac/authda/AuthDA
+ TrapPACUse(
+ TrapPACUse(
+
+aarch64/functions/pac/authdb/AuthDB
+ TrapPACUse(
+ TrapPACUse(
+
+aarch64/functions/pac/authia/AuthIA
+ TrapPACUse(
+ TrapPACUse(
+
+aarch64/functions/pac/authib/AuthIB
+ TrapPACUse(
+ TrapPACUse(
+
+aarch64/functions/pac/strip/Strip
+ CalculateBottomPACBit(
+
+aarch64/functions/sve/CheckSVEEnabled
+ AArch64.AdvSIMDFPAccessTrap(
+ AArch64.AdvSIMDFPAccessTrap(
+ AArch64.AdvSIMDFPAccessTrap(
+ AArch64.AdvSIMDFPAccessTrap(
+ SVEAccessTrap(
+ SVEAccessTrap(
+ SVEAccessTrap(
+ SVEAccessTrap(
+
+aarch64/instrs/system/sysops/dc/AArch64.MemZero
+ AArch64.TagMemZero(
+ AArch64.TagMemZero(
+
+aarch64/translation/debug/AArch64.CheckDebug
+ AArch64.CheckBreakpoint(
+ AArch64.CheckWatchpoint(
+
+aarch64/translation/vmsa_translation/AArch64.S1Translate
+ AArch64.MemSwapTableDesc(
+
+aarch64/translation/vmsa_translation/AArch64.S2Translate
+ AArch64.MemSwapTableDesc(
+
+aarch64/translation/vmsa_walk/AArch64.S1Walk
+ FetchDescriptor(
+ FetchDescriptor(
+
+aarch64/translation/vmsa_walk/AArch64.S2Walk
+ FetchDescriptor(
+
