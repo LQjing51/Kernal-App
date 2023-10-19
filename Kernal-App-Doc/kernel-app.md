@@ -448,7 +448,7 @@ PAGE_END    = (-(UL(1) << (48-1)))  = 0xFFFF800000000000
 基于此防御机制，Return-oriented programming 和 Jump-oriented programming的改进，返回地址或者跳转的地址来源于相应的寄存器，攻击者可以通过修改栈中的内容，进而修改寄存器的内容（在A函数调用函数B时，会将返回地址压栈，B函数返回时，先从栈中找到之前存的地址，然后将其放到返回地址寄存器LR中，然后再return，由此在函数B的buffer溢出时，就可以修改对应的返回值）。跳转/返回到新的地址后，执行gadget，再跳转……，形成gadget串，就可以实现执行一个有效的由现有代码片段组成的新程序（之所以要现有的代码，是因为可写内存是不可执行的，不能够执行新的写的代码，找gadget流程（c库函数中有丰富的可用的gadget）可以自动化并且多次使用，地址空间随机化ASLR可以防止自动和多次攻击）。开始的几个 gadget 应该实现给rax，rdx等寄存器赋想要的值的功能，都准备好了之后，才可以继续跳转到想要的地方。CFI 控制流完整性，按照本意的控制流执行，不能走别的路，通过静态和动态检查，知道某个指针到底指向谁，跳过去的时候，检查是否是原来指向的东西。直接跳转改不了，主要针对间接跳转，可以篡改。
 
 + MTE：不可以越界/free后写；
-+ PAN：跳转地址前后不能变，符合某pattern；
++ PAC：跳转地址前后不能变，符合某pattern；
 + BTI：间接跳转后一定要到BTI指令；
 + PAN：kenel不可以访问（读/执行/写）user space的代码
 
@@ -782,10 +782,10 @@ current：define current get_current()，get_current()返回struct task_sturct*,
 
 kmalloc(size_t size, int flags)：flags表示分配内存的类型。kmalloc/vmalloc用于在内核模块中动态开辟内存（利用kfree/vfree释放空间），malloc用于用户空间申请内存：
 
-+  kmalloc申请的是较小的物理地址和虚拟地址都连续的空间。kmalloc和get_free_page最终调用实现是相同的，只不过在调用最终函数时所传的flag不同，且不对获得空间清零。 
++  kmalloc申请的是较小的物理地址和虚拟地址都连续的空间（虚存和物理内存有固定偏移，在内核空间的 lowmem 区，即线性映射区）。kmalloc和get_free_page最终调用实现是相同的，只不过在调用最终函数时所传的flag不同，且不对获得空间清零。 
 
 +  kzalloc 先是用 kmalloc() 申请空间 , 然后用 memset() 清零来初始化 ,所有申请的元素都被初始化为 0。
-+  vmalloc用于申请较大的内存空间，虚拟内存是连续，但是在物理上它们不要求连续。
++  vmalloc用于申请较大的内存空间，虚拟内存是连续，但是在物理上它们不要求连续（在内核空间 highmem 区的 vmalloc 区/非连续内存区）。
 +  malloc 用于用户空间申请内存，且不对获得空间清零 
 
 file_path()：返回指向path字符串（即该可执行文件的源代码路径，在我的程序中是/home/lqj/Kernel-App/hook-example/tests/hello.spec，对于别的进程来说，可能是/usr/bin/cat等，每个进程都有自己的可执行文件，相应地在系统中有路径）的指针。

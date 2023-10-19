@@ -40,7 +40,7 @@ fineSearch.py：C6 MSR/MRS涉及的寄存器分类
 
   **寄存器**
 
-+ C5.2 Special-purpose register，
++ C5.2 Special-purpose register
 
 + D13.2-D13.8 System Register
 
